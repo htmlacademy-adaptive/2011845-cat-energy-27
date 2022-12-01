@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Cat Energy</title>
+</head>
+
+<body class="page__body">
+  <header class="main-header">
+    <nav class="main-header__nav main-nav">
+      <a class="main-nav__logo-img">
+        <img src="../img/header/logo-mobile.svg" width="34" height="38" alt="Логотип Cat Energy.">
+      </a>
+      <a class="main-nav__logo main-logo">
+        <img src="../img/header/logo-сatеnergy.svg" width="101" height="18" alt="Cat Energy.">
+      </a>
+      <button class="main-nav__toggle" type="button">
+        <span class="visually-hidden">Открыть меню.</span>
+      </button>
+      <div class="main-nav__wrapper-list">
+        <ul class="main-nav__list list-reset">
+          <li class="main-nav__item main-nav__item--active">
+            <a href="index.html">главная</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="catalog.html">каталог продукции</a>
+          </li>
+          <li class="main-nav__item">
+            <a>подбор программы</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main class="main-container">
+    <header class="main-container__header">
+      <h1 class="main-container__main-title">Подбор программы</h1>
+      <p class="main-container__main-description">Заполните анкету, и мы подберем
+        программу питания для вашего кота</p>
+    </header>
+    <section class="main-container__filter filter">
+      <h2 class="visually-hidden">Фильтры для подбора программы.</h2>
+      <form class="filter__form form" action="https://echo.htmlacademy.ru/" method="get">
+        <div class="form__pet pet">
+          <fieldset class="pet__filter-group">
+            <legend class="visually-hidden">Данные питомца</legend>
+            <ul class="pet__filter-list list-reset">
+              <li class="pet__filter-item">
+                <label for="pet-name">ИМЯ:*</label>
+                <input type="text" name="pet-description" id="pet-name" placeholder="барсик" required>
+              </li>
+              <li class="pet__filter-item">
+                <label for="pet-weight">Вес (кг):*</label>
+                <input type="number" name="pet-description" id="pet-weight" placeholder="7" required>
+              </li>
+              <li class="pet__filter-item">
+                <label for="pet-years">Возраст (лет):</label>
+                <input type="number" name="pet-description" id="pet-years" placeholder="7">
+              </li>
+            </ul>
+          </fieldset>
+
+          <fieldset class="pet__filter-group">
+            <legend class="visually-hidden">Цель питания</legend>
+            <ul class="pet__filter-list list-reset">
+              <li class="pet__filter-item">
+                <label class="pet__control control">
+                  <input class="control__input" type="radio" name="nutrition-type" value="weight-loss" checked>
+                  <span class="control__label">похудение</span>
+                </label>
+              </li>
+              <li class="hotels-filter-item">
+                <label class="pet__control control">
+                  <input class="control__input" type="radio" name="nutrition-type" value="weight-gain">
+                  <span class="control__label">Набор массы</span>
+                </label>
+              </li>
+              <li class="hotels-filter-item">
+                <label class="pet__control control">
+                  <input class="control__input" type="radio" name="nutrition-type" value="need-advice">
+                  <span class="control__label">Не знаю (Нужен ваш совет)</span>
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+        </div>
+        <div class="form__owner owner">
+          <fieldset class="owner__filter-group">
+            <legend class="owner__filter-title">Контактные данные (владельца кота)</legend>
+            <ul class="owner__filter-list list-reset">
+              <li class="owner__filter-item">
+                <label for="owner-name">E-mail:*</label>
+                <input type="email" name="owner-description" id="owner-name" placeholder="kuklachev@gmail.com" required>
+              </li>
+              <li class="owner__filter-item">
+                <label for="owner-weight">Телефон:*</label>
+                <input type="tel" name="owner-description" id="owner-weight" placeholder="8 (960) 900-60-90" required>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="owner__filter-group">
+            <legend class="owner__filter-title">Комментарий</legend>
+            <label class="visually-hidden" for="comment"> Оставить комментарий: </label>
+            <!-- Высота - 10 строк -->
+            <!-- Разрывы строк будут переданы на сервер -->
+            <textarea id="comment" rows="10" wrap="soft">Расскажите обо всех повАдках кота</textarea>
+          </fieldset>
+          <fieldset class="owner__filter-group">
+            <legend class="owner__filter-title">Дополнительно</legend>
+            <ul class="owner__filter-list list-reset">
+              <li class="owner__filter-item">
+                <label class="owner__control control">
+                  <input class="control__input" type="checkbox" name="still-type" value="sweetener" checked>
+                  <span class="control__label">сахарозаменитель</span>
+                </label>
+              </li>
+              <li class="owner__filter-item">
+                <label class="owner__control control">
+                  <input class="control__input" type="checkbox" name="still-type" value="water">
+                  <span class="control__label">питьевая вода</span>
+                </label>
+              </li>
+              <li class="owner__filter-item">
+                <label class="owner__control control">
+                  <input class="control__input" type="checkbox" name="still-type" value="milk">
+                  <span class="control__label">молоко</span>
+                </label>
+              </li>
+              <li class="owner__filter-item">
+                <label class="owner__control control">
+                  <input class="control__input" type="checkbox" name="still-type" value="vitamins">
+                  <span class="control__label">витамины</span>
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+        </div>
+        <button class="button-submit button" type="submit">отправить заявку</button>
+        <span>* — Обязательные поля</span>
+      </form>
+    </section>
+  </main>
+  <footer class="main-footer">
+    <h2 class="visually-hidden">Связь с нами</h2>
+    <a class="main-footer__logo main-logo" href="index.html">
+      <img src="../img/header/logo-сatеnergy.svg" width="101" height="18" alt="Cat Energy.">
+    </a>
+    <div class="main-footer__social social">
+      <ul class="social__list list-reset">
+        <li class="social__item">
+          <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
+            <span class="visually-hidden">Мы в Вконтакте</span>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
+            <span class="visually-hidden">Мы в Ютубе</span>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
+            <span class="visually-hidden">Мы в Телеграме</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="main-footer__copyright copyright">
+      <a class="copyright__link-logo" href="https://htmlacademy.ru/intensive/adaptive">
+        <p class="copyright__text">HTML Academy</p>
+      </a>
+    </div>
+  </footer>
+
+</body>
+
+</html>
