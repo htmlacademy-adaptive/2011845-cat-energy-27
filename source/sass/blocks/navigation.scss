@@ -1,0 +1,8 @@
+.navigation__link {
+  @include font-third;
+  font-size: 20px;
+  line-height: 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: inherit;
+}

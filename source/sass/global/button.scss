@@ -1,0 +1,10 @@
+.button {
+  font-size: 16px;
+  line-height: 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+  &--second {
+    font-size: 14px;
+    line-height: 18px;
+  }
+}

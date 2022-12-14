@@ -1,7 +1,30 @@
 @import "font.scss";
-@import "global.scss";
-@import "blocks/container.scss";
+@import "global/variables.scss";
+@import "global/global.scss";
+@import "global/visually-hidden.scss";
+@import "global/container.scss";
+@import "global/list-reset.scss";
+@import "global/title-page.scss";
+@import "global/subtitle.scss";
+@import "global/title-page-other.scss";
+@import "global/button.scss";
 @import "blocks/navigation.scss";
-@import "blocks/program.scss";
-@import "blocks/live.scss";
+@import "blocks/main.scss";
+@import "blocks/hero.scss";
 @import "blocks/footer.scss";
+@import "blocks/copyright.scss";
+
+//index
+
+@import "blocks/program.scss";
+@import "blocks/advantages.scss";
+@import "blocks/live.scss";
+
+//catalog
+
+@import "blocks/product.scss";
+@import "blocks/more.scss";
+
+//form
+
+@import "blocks/form.scss";
