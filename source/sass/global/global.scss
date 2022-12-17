@@ -9,7 +9,8 @@ html {
 }
 
 body {
-  @include font-main;
+  font-family: $font-main;
+  font-weight: 400;
   font-size: 14px;
   line-height: 18px;
   color: $font-color-main;

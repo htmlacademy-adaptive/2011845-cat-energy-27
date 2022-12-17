@@ -1,22 +1,6 @@
 //fonts
-$font-main: "Oswald Regular", "Arial", sans-serif;
-$font-second: "Lato Regular", "Arial", sans-serif;
-$font-third: "Oswald Medium", "Arial", sans-serif;
-
-@mixin font-main {
-  font-family: $font-main;
-  font-weight: 400;
-}
-
-@mixin font-second {
-  font-family: $font-second;
-  font-weight: 400;
-}
-
-@mixin font-third {
-  font-family: $font-third;
-  font-weight: 500;
-}
+$font-main: "Oswald", "Arial", sans-serif;
+$font-second: "Lato", "Arial", sans-serif;
 
 //font-color
 $font-color-main: #000000;
@@ -24,3 +8,4 @@ $font-color-second: #444444;
 
 $dark-grey: #111111;
 $dark-grey-second: #222222;
+$basic-white: #ffffff;
