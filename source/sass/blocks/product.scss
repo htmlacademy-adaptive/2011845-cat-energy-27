@@ -1,0 +1,19 @@
+.product__title-link {
+  text-decoration: none;
+}
+
+.product__title {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: $dark-grey-second;
+}
+
+.product__features,
+.product__text {
+  font-family: $font-second;
+  font-size: 12px;
+  line-height: 16px;
+  color: $font-color-second;
+}

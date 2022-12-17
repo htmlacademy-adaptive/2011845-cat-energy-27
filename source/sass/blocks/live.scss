@@ -1,0 +1,23 @@
+.live__container {
+  background-color: #eaeaea;
+}
+
+.live__text {
+  font-family: $font-second;
+}
+
+.live__result-value {
+  font-size: 24px;
+  line-height: 24px;
+}
+
+.live__result-description {
+  font-family: $font-second;
+  font-size: 12px;
+  line-height: 12px;
+}
+
+.live__result-price {
+  line-height: 20px;
+  text-transform: uppercase;
+}
