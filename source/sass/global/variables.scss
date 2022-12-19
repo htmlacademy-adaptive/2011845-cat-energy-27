@@ -2,10 +2,15 @@
 $font-main: "Oswald", "Arial", sans-serif;
 $font-second: "Lato", "Arial", sans-serif;
 
-//font-color
+// Viewports
+$mobile-max-width: 767px;
+$tablet-min-width: 768px;
+$tablet-max-width: 1024px;
+$desktop-min-width: 1025px;
+
+//colors
 $font-color-main: #000000;
 $font-color-second: #444444;
-
 $dark-grey: #111111;
 $dark-grey-second: #222222;
 $basic-white: #ffffff;

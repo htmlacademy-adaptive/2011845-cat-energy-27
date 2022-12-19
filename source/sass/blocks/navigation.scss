@@ -1,3 +1,14 @@
+//mobile
+
+.navigation__nav {
+  display: flex;
+  flex-direction: column;
+}
+
+.navigation__list {
+  min-width: 280px;
+}
+
 .navigation__link {
   font-family: $font-main;
   font-weight: 500;
@@ -6,4 +17,33 @@
   text-decoration: none;
   text-transform: uppercase;
   color: inherit;
+}
+
+@media (min-width: $tablet-min-width) and (max-width: $tablet-max-width) {
+  .navigation__nav {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .navigation__toggle {
+    display: none;
+  }
+
+  .navigation__list {
+    min-width: 440px;
+  }
+}
+
+@media (min-width: $desktop-min-width) {
+  .navigation__nav {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .navigation__toggle {
+    display: none;
+  }
+  .navigation__list {
+    width: 50%;
+  }
 }

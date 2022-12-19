@@ -1,3 +1,28 @@
 .advantages__item {
   font-family: $font-second;
 }
+
+@media (min-width: $tablet-min-width) and (max-width: $tablet-max-width) {
+  .advantages__list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: space-between;
+  }
+
+  .advantages__item {
+    grid-column: span 2;
+  }
+}
+
+@media (min-width: $desktop-min-width) {
+  .advantages__list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 80px;
+    //как сделать gap не фиксированным, а относительным?
+  }
+
+  .advantages__item {
+    grid-column: span 1;
+  }
+}

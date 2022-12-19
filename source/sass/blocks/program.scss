@@ -20,3 +20,16 @@
   text-transform: uppercase;
   color: inherit;
 }
+
+@media (min-width: $desktop-min-width) {
+  .program__list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 80px;
+    //как сделать gap не фиксированным, а относительным?
+  }
+
+  .program__item {
+    grid-column: span 2;
+  }
+}

@@ -1,3 +1,18 @@
 .container {
+  min-width: 280px;
   padding: 0 20px;
+  margin: 0 auto;
+}
+@media (min-width: $tablet-min-width) and (max-width: $tablet-max-width) {
+  .container {
+    min-width: 709px;
+    padding: 0 30px;
+  }
+}
+
+@media (min-width: $desktop-min-width) {
+  .container {
+    min-width: 805px;
+    padding: 0 110px;
+  }
 }

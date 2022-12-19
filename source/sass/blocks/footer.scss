@@ -16,3 +16,24 @@
   font-family: $font-second;
   line-height: 20px;
 }
+
+.footer__container {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: $tablet-min-width) and (max-width: $tablet-max-width) {
+  .footer__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: $desktop-min-width) {
+  .footer__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
