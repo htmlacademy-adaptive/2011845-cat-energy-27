@@ -1,3 +1,9 @@
+.hero {
+  &--form {
+    padding: 0 40px;
+  }
+}
+
 .hero__text {
   line-height: 14px;
   text-transform: uppercase;

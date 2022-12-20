@@ -23,3 +23,31 @@
   line-height: 18px;
   text-transform: uppercase;
 }
+
+@media (min-width: $tablet-min-width) and (max-width: $tablet-max-width) {
+  .form__group {
+    &--check {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  .form__fieldset {
+    &--submit {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}
+
+@media (min-width: $desktop-min-width) {
+  .form__container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 80px;
+  }
+
+  .form__fieldset {
+    grid-column: span 2;
+  }
+}

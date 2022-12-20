@@ -3,7 +3,12 @@
 }
 
 .footer__contact {
-  background-color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+
+  &--main {
+    background-color: #ffffff;
+  }
 }
 
 .footer__title {

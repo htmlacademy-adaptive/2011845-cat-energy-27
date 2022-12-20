@@ -1,12 +1,14 @@
 .container {
   min-width: 280px;
   padding: 0 20px;
-  margin: 0 auto;
 }
 @media (min-width: $tablet-min-width) and (max-width: $tablet-max-width) {
   .container {
     min-width: 709px;
     padding: 0 30px;
+  }
+  .container--form {
+    padding: 0 70px;
   }
 }
 
