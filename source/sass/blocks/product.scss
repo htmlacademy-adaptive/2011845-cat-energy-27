@@ -17,3 +17,41 @@
   line-height: 16px;
   color: $font-color-second;
 }
+
+@media (min-width: $tablet-min-width) and (max-width: $tablet-max-width) {
+  .product__list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 60px;
+  }
+
+  .product__item {
+    grid-column: span 2;
+  }
+}
+
+@media (min-width: $desktop-min-width) {
+  .product__list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 80px;
+  }
+
+  .product__item {
+    grid-column: span 1;
+  }
+
+  .more__container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 80px;
+  }
+
+  .more__list {
+    grid-column: span 3;
+  }
+
+  .more__item {
+    display: flex;
+  }
+}
