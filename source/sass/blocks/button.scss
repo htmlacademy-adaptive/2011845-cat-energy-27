@@ -4,9 +4,15 @@
   text-decoration: none;
   text-transform: uppercase;
   color: $basic-white;
+  background-color: #68b738;
 
   &--second {
     font-size: 14px;
     line-height: 18px;
+  }
+
+  &--more {
+    color: $color-second;
+    background-color: #f2f2f2;
   }
 }

@@ -1,5 +1,12 @@
 .live__container {
   background-color: #eaeaea;
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    align-items: start;
+    gap: 10px 220px;
+    grid-template-columns: 436px 1fr;
+  }
 }
 
 .live__text {
@@ -20,20 +27,4 @@
 .live__result-price {
   line-height: 20px;
   text-transform: uppercase;
-}
-
-@media (min-width: $desktop-min-width) {
-  .live__container {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    column-gap: 80px;
-  }
-
-  .live__description {
-    grid-column: span 2;
-  }
-
-  .live__slider {
-    grid-column: span 2;
-  }
 }

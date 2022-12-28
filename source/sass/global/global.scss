@@ -5,20 +5,26 @@
 }
 
 html {
-  height: 100vh;
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-  margin: 0;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  font-family: $font-main;
+  position: relative;
+
+  display: grid;
+  width: 100%;
+  min-width: 320px;
+  min-height: 100vh;
+  margin: 0 auto;
+
+  font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
-  color: $font-color-main;
+  font-family: $font-main;
+  color: $color-main;
 }
 
 img {

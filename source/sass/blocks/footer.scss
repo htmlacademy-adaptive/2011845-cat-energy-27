@@ -1,12 +1,33 @@
 .footer {
-  background-color: #eaeaea;
+  background-color: #f2f2f2;
+}
+
+.footer__map-container {
+  &--main {
+    background-color: #ffffff;
+  }
 }
 
 .footer__contact {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-top: 11px;
+  padding-bottom: 9px;
 
-  &--main {
+  @media (min-width: $tablet-width) {
+    gap: 10px 250px;
+    padding: 40px 39px;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    top: 94px;
+    left: 0;
+
+    gap: 10px 96px;
+    width: 565px;
+    padding: 40px 80px 28px;
+
     background-color: #ffffff;
   }
 }
@@ -23,22 +44,9 @@
 }
 
 .footer__container {
-  display: flex;
-  flex-direction: column;
-}
-
-@media (min-width: $tablet-min-width) and (max-width: $tablet-max-width) {
-  .footer__container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-}
-
-@media (min-width: $desktop-min-width) {
-  .footer__container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 140px 1fr;
+    align-items: center;
   }
 }
