@@ -1,5 +1,8 @@
 .form__container {
   @media (min-width: $desktop-width) {
+    max-width: 1220px;
+    margin: 0 auto;
+
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 32px 78px;
@@ -8,6 +11,7 @@
 
 .form__fieldset {
   width: 100%;
+  min-width: 320px;
   max-width: 1220px;
   margin: 0 auto;
   padding: 22px 20px;
