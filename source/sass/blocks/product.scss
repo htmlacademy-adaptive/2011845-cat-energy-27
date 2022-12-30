@@ -22,13 +22,13 @@
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    column-gap: 60px;
+    gap: 69px 60px;
   }
 
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    column-gap: 80px;
+    gap: 65px 80px;
   }
 }
 

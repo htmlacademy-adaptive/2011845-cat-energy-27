@@ -1,6 +1,23 @@
-.live__container {
+.live {
+  padding: 27px 0 40px;
+
   background-color: #eaeaea;
 
+  @media (min-width: $desktop-width) {
+    padding: 43px 0 101px;
+    background: rgb(234, 234, 234);
+    background: linear-gradient(0deg, #eaeaea 42.5%, #ffffff 42.9%);
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 0;
+    padding-bottom: 74px;
+    background: #f2f2f2;
+    background: linear-gradient(0deg, #f2f2f2 77%, #ffffff 77%);
+  }
+}
+
+.live__container {
   @media (min-width: $desktop-width) {
     display: grid;
     align-items: start;
