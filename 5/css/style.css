@@ -466,6 +466,8 @@ main {
 
 @media (min-width: 1440px) {
   .form__container {
+    max-width: 1220px;
+    margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 32px 78px;
