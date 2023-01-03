@@ -1,9 +1,35 @@
 .footer {
-  background-color: #eaeaea;
+  background-color: #f2f2f2;
+}
+
+.footer__map-container {
+  &--main {
+    background-color: #ffffff;
+  }
 }
 
 .footer__contact {
-  background-color: #ffffff;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-top: 11px;
+  padding-bottom: 9px;
+
+  @media (min-width: $tablet-width) {
+    gap: 10px 250px;
+    padding: 40px 39px;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    top: 94px;
+    left: 0;
+
+    gap: 10px 96px;
+    width: 565px;
+    padding: 40px 80px 28px;
+
+    background-color: #ffffff;
+  }
 }
 
 .footer__title {
@@ -15,4 +41,12 @@
 .footer__address {
   font-family: $font-second;
   line-height: 20px;
+}
+
+.footer__container {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 140px 1fr;
+    align-items: center;
+  }
 }

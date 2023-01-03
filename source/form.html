@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Cat Energy</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -10,8 +11,8 @@
 <body class="body">
   <header class="header">
     <div class="navigation container">
-      <nav class="navigation__nav">
-        <a class="navigation__logo" href="index.html" style="text-decoration: none;">
+      <nav class="navigation__nav navigation__nav--open">
+        <a class="navigation__logo" href="index.html">
           <img src="img/svg/logo-mobile.svg" alt="Логотип Cat Entrge" width="191" height="38">
         </a>
         <button class="navigation__toggle" type="button">
@@ -29,15 +30,15 @@
           </li>
         </ul>
       </nav>
-      <section class="hero">
+      <section class="hero hero--form">
         <div class="hero__description">
           <h1 class="hero__title title-page">Подбор программы</h1>
-          <p class="hero__text hero__text--form">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+          <p class="hero__text">Заполните анкету, и мы подберем<br> программу питания для вашего кота</p>
         </div>
       </section>
     </div>
   </header>
-  <main class="main container">
+  <main class="main">
     <section class="form">
       <form action="https://echo.htmlacademy.ru/" method="post">
         <div class="form__container">
@@ -60,7 +61,7 @@
           </fieldset>
           <fieldset class="form__fieldset form__fieldset--radio">
             <h2 class="visually-hidden">Цель питания</h2>
-            <div class="form__group">
+            <div class="form__group form__group--radio">
               <label class="form__label form__group-item form__catalog-control" for="slimming"> <input class="form__input-item form__input-item--radio" type="radio" name="group-weight" value="Похудение" id="slimming" checked>
                 <span class="form__label-text">Похудение</span>
               </label>
@@ -79,7 +80,7 @@
           <h2 class="form__legend title-page-other title-page-other--form title-page-other--lines">
             <span>Контактные данные (владельца кота)</span>
           </h2>
-          <div class="form__group">
+          <div class="form__group form__group--contact">
             <div class="form__group-item">
               <label class="form__label" for="form-mail">E-mail:<sup>*</sup></label>
               <div class="form__input-container form__input-container--mail">
@@ -94,7 +95,7 @@
             </div>
           </div>
         </fieldset>
-        <fieldset class="form__fieldset form__fieldset--check">
+        <fieldset class="form__fieldset form__fieldset--comment">
           <h2 class="form__legend title-page-other title-page-other--lines">
             <span>Комментарий</span>
           </h2>
@@ -105,7 +106,7 @@
           <h2 class="form__legend title-page-other title-page-other--lines">
             <span>Дополнительно</span>
           </h2>
-          <div class="form__group">
+          <div class="form__group form__group--check">
             <label class="form__label form__group-item form__catalog-control" for="sweetener">
               <input class="form__input-item form__input-item--check" type="checkbox" name="sweetener" value="Сахарозаменитель" id="sweetener" checked>
               <span class="form__label-text">Сахарозаменитель</span>
@@ -150,33 +151,33 @@
         </div>
       </div>
     </section>
-    <section class="footer__container">
-      <div class="container">
-        <h2 class="visually-hidden">Социальные сети.</h2>
-        <div class="footer__logo-container">
-          <a class="footer__logo"> <img src="img/svg/logo-footer.svg" alt="Логотип Cat Energy" width="128" height="24"></a>
-        </div>
-        <div class="footer__social-container">
-          <ul class="footer__social social list-reset">
-            <li class="social__item">
-              <a class="social__link" href="https://vk.com/htmlacademy">
-                <span class="visually-hidden">Мы в Вконтакте</span> </a>
-            </li>
-            <li class="social__item">
-              <a class="social__link" href="https://www.youtube.com/user/htmlacademyru">
-                <span class="visually-hidden">Мы в YouTube</span> </a>
-            </li>
-            <li class="social__item ">
-              <a class="social__link" href="https://t.me/htmlacademy">
-                <span class="visually-hidden">Мы в Телеграме</span> </a>
-            </li>
-          </ul>
-        </div>
-        <div class="footer__copyright copyright">
-          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-            <span class="copyright__text">HTML Academy</span>
-          </a>
-        </div>
+    <section class="footer__container container">
+      <h2 class="visually-hidden">Социальные сети.</h2>
+      <div class="footer__logo-container">
+        <a class="footer__logo" href="index.html">
+          <img src="img/svg/logo-footer.svg" alt="Логотип Cat Energy" width="128" height="24">
+        </a>
+      </div>
+      <div class="footer__social-container">
+        <ul class="footer__social social list-reset">
+          <li class="social__item">
+            <a class="social__link" href="https://vk.com/htmlacademy">
+              <span class="visually-hidden">Мы в Вконтакте</span> </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="https://www.youtube.com/user/htmlacademyru">
+              <span class="visually-hidden">Мы в YouTube</span> </a>
+          </li>
+          <li class="social__item ">
+            <a class="social__link" href="https://t.me/htmlacademy">
+              <span class="visually-hidden">Мы в Телеграме</span> </a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__copyright copyright">
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <span class="copyright__text">HTML Academy</span>
+        </a>
       </div>
     </section>
   </footer>

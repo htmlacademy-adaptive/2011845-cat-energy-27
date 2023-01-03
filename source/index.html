@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Cat Energy</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -10,7 +11,7 @@
 <body class="body">
   <header class="header">
     <div class="navigation container">
-      <nav class="navigation__nav">
+      <nav class="navigation__nav navigation__nav--open">
         <a class="navigation__logo">
           <img src="img/svg/logo-mobile.svg" alt="Логотип Cat Entrge" width="191" height="38">
         </a>
@@ -41,7 +42,7 @@
       </section>
     </div>
   </header>
-  <main class="main container">
+  <main class="main">
     <section class="program container">
       <h2 class="visually-hidden">Программы</h2>
       <ul class="program__list list-reset">
@@ -57,7 +58,7 @@
         </li>
       </ul>
     </section>
-    <section class="advantages">
+    <section class="advantages container">
       <h2 class="advantages__title subtitle">Как это работает</h2>
       <ul class="advantages__list list-reset">
         <li class="advantages__item advantages__item--beneficial">Функциональное питание содержит только полезные питательные вещества.</li>
@@ -111,10 +112,10 @@
   </main>
   <footer class="footer">
     <h2 class="visually-hidden">Контакты.</h2>
-    <section class="footer__map-container">
+    <section class="footer__map-container footer__map-container--main">
       <div class="container">
         <h2 class="visually-hidden">Местонахождение.</h2>
-        <div class="footer__contact">
+        <div class="footer__contact footer__contact">
           <p class="footer__title">Приглашаем к&nbsp;сотрудничеству дилеров!</p>
           <p class="footer__address">ул. Большая Конюшенная, д. 19/8 <span>Санкт-Петербург</span></p>
         </div>
@@ -124,37 +125,38 @@
           <img src="img/map-mobile.jpg" alt="Карта" width="320" height="362">
         </div>
         <div class="footer__map-iframe">
-          <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.58095197757!2d30.319410323390894!3d59.93909537160517!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1603140540112!5m2!1sru!2sru" allowfullscreen></iframe>
+          <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.58095197757!2d30.319410323390894!3d59.93909537160517!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1603140540112!5m2!1sru!2sru" allowfullscreen>
+          </iframe>
         </div>
       </div>
     </section>
-    <section class="footer__container">
-      <div class="container">
-        <h2 class="visually-hidden">Социальные сети.</h2>
-        <div class="footer__logo-container">
-          <a class="footer__logo"> <img src="img/svg/logo-footer.svg" alt="Логотип Cat Energy" width="128" height="24"></a>
-        </div>
-        <div class="footer__social-container">
-          <ul class="footer__social social list-reset">
-            <li class="social__item">
-              <a class="social__link" href="https://vk.com/htmlacademy">
-                <span class="visually-hidden">Мы в Вконтакте</span> </a>
-            </li>
-            <li class="social__item">
-              <a class="social__link" href="https://www.youtube.com/user/htmlacademyru">
-                <span class="visually-hidden">Мы в YouTube</span> </a>
-            </li>
-            <li class="social__item ">
-              <a class="social__link" href="https://t.me/htmlacademy">
-                <span class="visually-hidden">Мы в Телеграме</span> </a>
-            </li>
-          </ul>
-        </div>
-        <div class="footer__copyright copyright">
-          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-            <span class="copyright__text">HTML Academy</span>
-          </a>
-        </div>
+    <section class="footer__container container">
+      <h2 class="visually-hidden">Социальные сети.</h2>
+      <div class="footer__logo-container">
+        <a class="footer__logo">
+          <img src="img/svg/logo-footer.svg" alt="Логотип Cat Energy" width="128" height="24">
+        </a>
+      </div>
+      <div class="footer__social-container">
+        <ul class="footer__social social list-reset">
+          <li class="social__item">
+            <a class="social__link" href="https://vk.com/htmlacademy">
+              <span class="visually-hidden">Мы в Вконтакте</span> </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="https://www.youtube.com/user/htmlacademyru">
+              <span class="visually-hidden">Мы в YouTube</span> </a>
+          </li>
+          <li class="social__item ">
+            <a class="social__link" href="https://t.me/htmlacademy">
+              <span class="visually-hidden">Мы в Телеграме</span> </a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__copyright copyright">
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <span class="copyright__text">HTML Academy</span>
+        </a>
       </div>
     </section>
   </footer>

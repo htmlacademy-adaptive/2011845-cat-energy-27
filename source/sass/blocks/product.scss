@@ -15,5 +15,31 @@
   font-family: $font-second;
   font-size: 12px;
   line-height: 16px;
-  color: $font-color-second;
+  color: $color-second;
+}
+
+.product__list {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 69px 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 65px 80px;
+  }
+}
+
+.product__item {
+  position: relative;
+
+  @media (min-width: 768px) {
+    padding-top: 70px;
+  }
+
+  @media (min-width: 1440px) {
+    padding-top: 80px;
+  }
 }

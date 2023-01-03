@@ -1,3 +1,96 @@
+/*.navigation {
+  @media (min-width: $desktop-width) {
+    //background-image: url("/img/index-background-desktop.png");
+    //background-color: rgba(104, 183, 56, 0.85);
+    background: linear-gradient(to left, rgba(104, 183, 56, 0.85) 50%, transparent 50%);
+    background-position: 0 0;
+    background-size: 100% 50vw;
+    background-repeat: no-repeat;
+  }
+}*/
+
+.navigation__nav {
+  position: relative;
+  min-height: 65px;
+  padding-top: 10px;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 20px;
+    align-items: center;
+    padding: 24px 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 52px 0 20px;
+  }
+}
+
+.navigation__logo {
+  display: inline-block;
+  width: 191px;
+  height: 38px;
+}
+
+.navigation__toggle {
+  position: absolute;
+  top: 23px;
+  right: 20px;
+  width: 24px;
+  height: 18px;
+  background: none;
+  border: none;
+  border-top: 2px solid #000000;
+
+  @media (min-width: 768px) {
+    display: none;
+  }
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 24px;
+    height: 2px;
+    background-color: #000000;
+  }
+
+  &::before {
+    top: 45%;
+    transform: translateY(-50%);
+  }
+
+  &::after {
+    bottom: 0;
+  }
+}
+
+.navigation__list {
+  position: absolute;
+  top: 65px;
+  z-index: 10;
+  display: none;
+  flex-direction: column;
+  width: 100%;
+  background-color: #ffffff;
+
+  @media (min-width: $tablet-width) {
+    position: static;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    background-color: transparent;
+  }
+}
+
+.navigation__nav--open .navigation__list {
+  display: flex;
+}
+
 .navigation__link {
   font-family: $font-main;
   font-weight: 500;
