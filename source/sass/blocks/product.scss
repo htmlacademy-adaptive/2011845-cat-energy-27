@@ -1,27 +1,7 @@
-.product__title-link {
-  text-decoration: none;
-}
-
-.product__title {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
-  text-transform: uppercase;
-  color: $dark-grey-second;
-}
-
-.product__features,
-.product__text {
-  font-family: $font-second;
-  font-size: 12px;
-  line-height: 16px;
-  color: $color-second;
-}
-
 .product__list {
   @media (min-width: $tablet-width) {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 69px 60px;
   }
 
@@ -33,13 +13,99 @@
 }
 
 .product__item {
-  position: relative;
+  border-bottom: 1px solid #ebebeb;
 
-  @media (min-width: 768px) {
-    padding-top: 70px;
+  @media (min-width: $tablet-width) {
+    border: none;
+  }
+}
+
+.product__item-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 19px 20px 25px;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: 1fr;
+    padding: 39px 36px;
   }
 
-  @media (min-width: 1440px) {
-    padding-top: 80px;
+  @media (min-width: $desktop-width) {
+    padding: 40px 30px 40px 35px;
   }
+}
+
+.product__item--all .product__item-container {
+  grid-template-columns: 1fr;
+}
+
+.product__item--all {
+  @media (min-width: $tablet-width) {
+    border: 2px solid #f2f2f2;
+  }
+}
+
+.product__img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.product__description {
+  padding-bottom: 22px;
+}
+
+.product__title-link {
+  text-decoration: none;
+}
+
+.product__title {
+  margin: 0;
+  padding-bottom: 18px;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: $dark-grey-second;
+
+  @media (min-width: $tablet-width) {
+    text-align: center;
+  }
+
+  &--more {
+    text-align: center;
+  }
+}
+
+.product__text {
+  text-align: center;
+}
+
+.product__features,
+.product__text {
+  font-family: $font-second;
+  font-size: 12px;
+  line-height: 16px;
+  color: $color-second;
+}
+
+.product__features {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 0;
+}
+
+.product__features-value {
+  margin: 0;
+
+  text-align: end;
+}
+
+.product__button {
+  display: block;
+  grid-column: 1/-1;
+  width: 100%;
+
+  text-align: center;
 }

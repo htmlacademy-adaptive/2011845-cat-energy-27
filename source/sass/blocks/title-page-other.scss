@@ -1,9 +1,103 @@
 .title-page-other {
+  margin: 0;
+
   font-weight: 400;
   font-size: 24px;
   line-height: 24px;
+}
 
-  &--form {
-    line-height: 26px;
+.form__fieldset--contacts .title-page-other {
+  padding: 26px 0 35px 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 71px 0 76px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 69px;
+  }
+}
+
+.form__fieldset--comment .title-page-other {
+  padding: 24px 0 38px 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 65px 0 76px;
+  }
+}
+
+.form__fieldset--check .title-page-other {
+  padding: 23px 0 34px 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 65px 0 57px;
+  }
+}
+
+//декоративные линии
+/*
+.title-page-other--lines {
+  display: block;
+  align-items: center;
+  justify-content: center;
+}
+
+.title-page-other--lines span {
+  display: flex;
+
+  align-items: center;
+}
+
+.title-page-other--lines span::before {
+  @media (min-width: $tablet-width) {
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 2px;
+    min-width: 30px;
+    margin-right: 40px;
+
+    background: #68b738;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 70px;
+    margin-right: 40px;
+  }
+}
+
+.title-page-other--lines span::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  height: 2px;
+  width: 100%;
+  margin-left: 22px;
+
+  background: #68b738;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 42px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 40px;
+  }
+}*/
+
+.more .title-page-other {
+  padding: 25px 21px 36px 20px;
+
+  border-bottom: 1px solid #cdcdcd;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 68px;
+    padding-bottom: 80px;
+
+    border: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 76px 0 81px;
   }
 }

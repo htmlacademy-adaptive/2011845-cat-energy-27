@@ -1,6 +1,10 @@
 .button {
+  padding: 7px 10px;
+
   font-size: 16px;
   line-height: 20px;
+  align-items: center;
+  text-align: center;
   text-decoration: none;
   text-transform: uppercase;
   color: $basic-white;

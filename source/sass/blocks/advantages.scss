@@ -1,5 +1,20 @@
+.advantages {
+  padding-top: 20px;
+  padding-bottom: 49px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 45px;
+    padding-bottom: 47px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 71px;
+    padding-bottom: 69px;
+  }
+}
+
 .advantages__list {
-  padding-top: 36px;
+  padding-top: 40px;
 
   @media (min-width: $tablet-width) {
     display: grid;
@@ -12,5 +27,15 @@
   @media (min-width: $desktop-width) {
     gap: 80px;
     grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.advantages__item {
+  padding-bottom: 20px;
+
+  font-family: $font-second;
+
+  &:last-child {
+    padding-bottom: 0;
   }
 }

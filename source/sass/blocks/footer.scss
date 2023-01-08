@@ -8,6 +8,15 @@
   }
 }
 
+.footer__map-img img {
+  display: block;
+}
+
+.footer__map-iframe iframe {
+  border: none;
+  display: block;
+}
+
 .footer__contact {
   display: grid;
   grid-template-columns: 1fr 1fr;
