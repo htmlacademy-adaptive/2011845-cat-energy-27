@@ -27,15 +27,3 @@
     padding: 0;
   }
 }
-
-.main--catalog .container {
-  padding: 0;
-
-  @media (min-width: $tablet-width) {
-    padding: 0 30px;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding: 0;
-  }
-}

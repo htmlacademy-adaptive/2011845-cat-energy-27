@@ -42,13 +42,13 @@
     border-bottom: 1px solid #ebebeb;
 
     @media (min-width: $tablet-width) {
-      padding: 65px 110px 82px;
+      padding: 65px 0 82px;
 
       border: none;
     }
 
     @media (min-width: $desktop-width) {
-      padding: 74px 30px 84px;
+      padding: 74px 0 84px;
     }
   }
 }
@@ -62,7 +62,7 @@
       rgba(104, 183, 56, 0.85),
       rgba(104, 183, 56, 0.85)
     ),
-    url("../img/index-background-mobile.png");
+    url("../img/promo-bg-mobile.jpg");
   background-repeat: repeat, no-repeat;
   background-position: top;
   background-size: auto, cover;
@@ -78,7 +78,7 @@
 
   @media (min-width: $desktop-width) {
     width: 545px;
-    padding: 93px 20px 10px 80px;
+    padding: 91px 20px 10px 80px;
   }
 }
 
@@ -133,6 +133,9 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 49px;
+
+    font-size: 20px;
+    line-height: 20px;
   }
 }
 
@@ -140,6 +143,10 @@
   margin-bottom: 0;
 
   line-height: 18px;
+
+  @media (min-width: $tablet-width) {
+    line-height: 30px;
+  }
 }
 
 .hero__button {
@@ -162,7 +169,7 @@
     position: relative;
     left: auto;
 
-    width: 244px;
+    min-width: 244px;
     margin-left: 0;
     padding: 14px 10px;
 

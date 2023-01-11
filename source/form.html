@@ -45,31 +45,32 @@
           <fieldset class="form__fieldset form__fieldset--data">
             <h2 class="visually-hidden">Данные питомца</h2>
             <div class="form__group">
-              <div class="form__filter-item">
+              <div class="form__group-item">
                 <label class="form__label" for="form-name">Имя:<sup>*</sup></label>
-                <input class="form__input" type="text" name="form-description" id="form-name" placeholder="барсик" required>
+                <input class="form__input" type="text" id="form-name" placeholder="Барсик" required>
               </div>
-              <div class="form__filter-item">
+              <div class="form__group-item">
                 <label class="form__label" for="form-weight">Вес (кг):<sup>*</sup></label>
-                <input class="form__input" type="number" name="form-description" id="form-weight" placeholder="7" required>
+                <input class="form__input" type="number" id="form-weight" placeholder="7" required>
               </div>
-              <div class="form__filter-item">
+              <div class="form__group-item">
                 <label class="form__label" for="form-years">Возраст (лет):</label>
-                <input class="form__input" type="number" name="form-description" id="form-years" placeholder="7">
+                <input class="form__input" type="number" id="form-years" placeholder="7">
               </div>
             </div>
           </fieldset>
           <fieldset class="form__fieldset form__fieldset--radio">
             <h2 class="visually-hidden">Цель питания</h2>
-            <div class="form__group form__group--radio">
-              <label class="form__label form__group-item form__catalog-control" for="slimming"> <input class="form__input-item form__input-item--radio" type="radio" name="group-weight" value="Похудение" id="slimming" checked>
+            <div class="form__group">
+              <label class="form__label form__group-item" for="slimming">
+                <input class="form__input-item form__input-item--radio" type="radio" name="group-weight" value="Похудение" id="slimming" checked>
                 <span class="form__label-text">Похудение</span>
               </label>
-              <label class="form__label form__group-item form__catalog-control" for="gaining-mass">
+              <label class="form__label form__group-item" for="gaining-mass">
                 <input class="form__input-item form__input-item--radio" type="radio" name="group-weight" value="Набор массы" id="gaining-mass">
                 <span class="form__label-text">Набор массы</span>
               </label>
-              <label class="form__label form__group-item form__catalog-control" for="need-advice">
+              <label class="form__label form__group-item" for="need-advice">
                 <input class="form__input-item form__input-item--radio" type="radio" name="group-weight" value="Не знаю (нужен ваш совет)" id="need-advice">
                 <span class="form__label-text">Не знаю (нужен ваш совет)</span>
               </label>
@@ -80,7 +81,7 @@
           <h2 class="form__legend title-page-other title-page-other--lines">
             <span>Контактные&nbsp;данные (владельца кота)</span>
           </h2>
-          <div class="form__group form__group--contact">
+          <div class="form__group">
             <div class="form__group-item">
               <label class="form__label" for="form-mail">E-mail:<sup>*</sup></label>
               <div class="form__input-container form__input-container--mail">
@@ -95,31 +96,30 @@
             </div>
           </div>
         </fieldset>
-        <fieldset class="form__fieldset form__fieldset--comment">
+        <fieldset class="form__fieldset form__fieldset--commit">
           <h2 class="form__legend title-page-other title-page-other--lines">
             <span>Комментарий</span>
           </h2>
-          <label class="visually-hidden" for="comment"> Оставить комментарий: </label>
-          <textarea class="form__commit" id="comment" rows="10" wrap="soft">Расскажите обо всех повадках кота</textarea>
+          <textarea class="form__input" name="commit" id="commit" rows="10" placeholder="Расскажите обо всех повадках кота"></textarea>
         </fieldset>
         <fieldset class="form__fieldset form__fieldset--check">
           <h2 class="form__legend title-page-other title-page-other--lines">
             <span>Дополнительно</span>
           </h2>
-          <div class="form__group form__group--check">
-            <label class="form__label form__group-item form__catalog-control" for="sweetener">
+          <div class="form__group">
+            <label class="form__label form__group-item" for="sweetener">
               <input class="form__input-item form__input-item--check" type="checkbox" name="sweetener" value="Сахарозаменитель" id="sweetener" checked>
               <span class="form__label-text">Сахарозаменитель</span>
             </label>
-            <label class="form__label form__group-item form__catalog-control" for="water">
+            <label class="form__label form__group-item" for="water">
               <input class="form__input-item form__input-item--check" type="checkbox" name="water" value="Питьевая вода" id="water">
               <span class="form__label-text">Питьевая вода</span>
             </label>
-            <label class="form__label form__group-item form__catalog-control" for="milk">
+            <label class="form__label form__group-item" for="milk">
               <input class="form__input-item form__input-item--check" type="checkbox" name="milk" value="Молоко" id="milk">
               <span class="form__label-text">Молоко</span>
             </label>
-            <label class="form__label form__group-item form__catalog-control" for="vitamins">
+            <label class="form__label form__group-item" for="vitamins">
               <input class="form__input-item form__input-item--check" type="checkbox" name="vitamins" value="Витамины" id="vitamins">
               <span class="form__label-text">Витамины</span>
             </label>
@@ -127,7 +127,7 @@
         </fieldset>
         <fieldset class="form__fieldset form__fieldset--submit">
           <button class="button form__submit" type="submit">Отправить заявку</button>
-          <p class="form__description"><sup>*</sup>— Обязательные поля</p>
+          <p><sup>*</sup>— Обязательные поля</p>
         </fieldset>
       </form>
     </section>
@@ -143,11 +143,11 @@
         </div>
       </div>
       <div class="footer__map">
-        <div class="footer__map-img">
+        <a class="footer__map-img" href="#">
           <img src="img/map-mobile.jpg" alt="Карта" width="320" height="362">
-        </div>
+        </a>
         <div class="footer__map-iframe">
-          <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.58095197757!2d30.319410323390894!3d59.93909537160517!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1603140540112!5m2!1sru!2sru" width="320" height="362" allowfullscreen title="Карта"></iframe>
+          <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.58095197757!2d30.319410323390894!3d59.93909537160517!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1603140540112!5m2!1sru!2sru" allowfullscreen title="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург"></iframe>
         </div>
       </div>
     </section>
@@ -181,7 +181,7 @@
       </div>
     </section>
   </footer>
-  <script src="/js/script.js"></script>
+  <script src="js/script.js"></script>
 
 </body>
 

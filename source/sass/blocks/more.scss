@@ -1,26 +1,38 @@
+.more {
+  //padding: 23px 0 35px;
+  padding-bottom: 35px;
+
+  @media (min-width: $tablet-width) {
+    //padding: 63px 0 76px;
+    padding-bottom: 76px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 71px 0 19px;
+  }
+}
+
 .more__container {
   //padding-top: 30px;
 
   @media (min-width: $tablet-width) {
-    //padding-top: 74px;
+    padding-top: 74px;
   }
 
   @media (min-width: $desktop-width) {
     display: grid;
-    margin-bottom: 86px;
-
-    align-items: start;
-    //padding-top: 71px;
     gap: 30px 80px;
     grid-template-columns: 1fr auto;
+    align-items: start;
+    padding-top: 71px;
   }
 }
 
 .more__list {
-  padding: 0 20px;
+  margin-bottom: 34px;
 
   @media (min-width: $tablet-width) {
-    padding: 0;
+    margin-bottom: 68px;
   }
 }
 
@@ -28,40 +40,123 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding: 14px 0 18px;
-  border-bottom: 1px solid #cdcdcd;
+  padding: 13px 0 19px;
+
+  border-top: 1px solid #cdcdcd;
 
   @media (min-width: $tablet-width) {
     display: grid;
-    padding: 26px 37px 28px;
-    border: 1px solid #cdcdcd;
-    border-bottom: none;
     gap: 18px 23px;
     grid-template-columns: 1fr 150px 70px;
+    padding: 26px 37px 28px;
+
+    border: 1px solid #cdcdcd;
+    border-bottom: none;
   }
 
   @media (min-width: $desktop-width) {
+    grid-template-columns: 1fr 220px 60px 244px;
     align-items: baseline;
     padding: 17px 0 14px;
+
     border: none;
     border-top: 1px solid #cdcdcd;
-    grid-template-columns: 1fr 220px 60px 244px;
   }
+}
+
+.more__item:last-child {
+  border-bottom: 1px solid #cdcdcd;
 }
 
 .more__title {
   width: 100%;
-  margin: 0;
-  padding-bottom: 13px;
+  margin: 0 0 12px;
 
   font-weight: 400;
   font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;
   color: $dark-grey-second;
+
+  @media (min-width: $tablet-width) {
+    width: auto;
+    margin: 0;
+
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
-.more__weight,
+.more__item span {
+  font-size: 14px;
+  line-height: 14px;
+  font-family: $font-second;
+  color: #444444;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 26px;
+    text-align: right;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: left;
+  }
+}
+
+.more__button {
+  width: 100%;
+  margin-top: 15px;
+  padding: 10px;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 1/-1;
+    margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: auto;
+  }
+}
+
+.more__bonus {
+  padding: 172px 20px 26px;
+
+  font-size: 16px;
+  line-height: 20px;
+  font-family: $font-second;
+  text-align: center;
+  color: #ffffff;
+
+  background-image: url("../img/svg/icon-gift.svg"),
+    linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
+    url("../img/more-bonus-mobile.png");
+  background-repeat: no-repeat, repeat, no-repeat;
+  background-position: top 59px center, top, top;
+  background-size: 78px 80px, auto, cover;
+
+  @media (min-width: $tablet-width) {
+    padding: 56px 20px 52px 60%;
+
+    text-align: left;
+
+    background-image: url("../img/svg/icon-gift.svg"),
+      linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
+      url("../img/more-bonus-tablet.jpg");
+    background-position: center left 80px, top, center;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 245px;
+    padding: 172px 20px 26px;
+
+    text-align: center;
+
+    background-position: top 59px center, top, top;
+  }
+}
+
+/*.more__weight,
 .more__price {
   line-height: 14px;
   color: $color-second;
@@ -70,29 +165,6 @@
 .more__price {
   text-align: end;
   padding-bottom: 15px;
-}
-
-.more__button {
-  width: 100%;
-  grid-column: 1/-1;
-
-  @media (min-width: $desktop-width) {
-    grid-column: 4/-1;
-  }
-}
-
-.more__bonus {
-  padding: 35px 20px;
-
-  @media (min-width: $tablet-width) {
-    margin: 69px 0 76px;
-    padding: 71px 124px 69px;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin: 0;
-    padding: 42px 43px 42px 41px;
-  }
 }
 
 .more__text {
@@ -112,3 +184,4 @@
     text-align: center;
   }
 }
+*/

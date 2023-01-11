@@ -34,8 +34,14 @@
   padding-bottom: 20px;
 
   font-family: $font-second;
+  color: #444444;
 
   &:last-child {
     padding-bottom: 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
   }
 }

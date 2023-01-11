@@ -1,97 +1,85 @@
 .title-page-other {
-  margin: 0;
+  position: relative;
+
+  margin: 0 -20px;
+  overflow: hidden;
 
   font-weight: 400;
   font-size: 24px;
-  line-height: 24px;
-}
-
-.form__fieldset--contacts .title-page-other {
-  padding: 26px 0 35px 20px;
+  line-height: 30px;
+  font-family: $font-main;
 
   @media (min-width: $tablet-width) {
-    padding: 71px 0 76px;
+    margin: 0 -70px;
+    padding-left: 30px;
+
+    font-size: 36px;
+    line-height: 46px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 69px;
+    margin: 0 -102px 0 -110px;
+    padding-left: 70px;
   }
 }
 
-.form__fieldset--comment .title-page-other {
-  padding: 24px 0 38px 20px;
+.title-page-other span {
+  padding-right: 20px;
 
   @media (min-width: $tablet-width) {
-    padding: 65px 0 76px;
+    padding: 0 37px;
   }
 }
 
-.form__fieldset--check .title-page-other {
-  padding: 23px 0 34px 20px;
-
-  @media (min-width: $tablet-width) {
-    padding: 65px 0 57px;
-  }
-}
-
-//декоративные линии
-/*
 .title-page-other--lines {
-  display: block;
-  align-items: center;
-  justify-content: center;
-}
-
-.title-page-other--lines span {
-  display: flex;
-
-  align-items: center;
-}
-
-.title-page-other--lines span::before {
-  @media (min-width: $tablet-width) {
+  &::after,
+  &::before {
     content: "";
     position: absolute;
-    left: 0;
-    height: 2px;
-    min-width: 30px;
-    margin-right: 40px;
+    top: 16px;
 
-    background: #68b738;
+    display: inline-block;
+    width: 100%;
+    height: 2px;
+
+    vertical-align: middle;
+
+    background-color: #68b738;
+
+    @media (min-width: $tablet-width) {
+      top: 25px;
+    }
   }
 
-  @media (min-width: $desktop-width) {
-    min-width: 70px;
-    margin-right: 40px;
+  &:before {
+    display: none;
+    margin-left: -100%;
+
+    @media (min-width: $tablet-width) {
+      display: inline-block;
+    }
+  }
+
+  &:after {
+    margin-right: -100%;
   }
 }
 
-.title-page-other--lines span::after {
-  content: "";
-  position: absolute;
-  right: 0;
-  height: 2px;
-  width: 100%;
-  margin-left: 22px;
-
-  background: #68b738;
-
-  @media (min-width: $tablet-width) {
-    margin-left: 42px;
+.more .title-page-other--lines {
+  &::after,
+  &::before {
+    top: 40px;
   }
-
-  @media (min-width: $desktop-width) {
-    margin-left: 40px;
-  }
-}*/
+}
 
 .more .title-page-other {
   padding: 25px 21px 36px 20px;
+  line-height: 24px;
 
-  border-bottom: 1px solid #cdcdcd;
+  //border-bottom: 1px solid #cdcdcd;
 
   @media (min-width: $tablet-width) {
-    padding-top: 68px;
+    padding-top: 75px;
     padding-bottom: 80px;
 
     border: none;
