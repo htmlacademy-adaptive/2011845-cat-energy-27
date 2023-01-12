@@ -9,7 +9,7 @@
 </head>
 
 <body class="body">
-  <header class="header">
+  <header class="header header--index">
     <div class="navigation container">
       <nav class="navigation__nav navigation__nav--open">
         <a class="navigation__logo">
@@ -26,18 +26,18 @@
             <a class="navigation__link" href="catalog.html">Каталог продукции</a>
           </li>
           <li class="navigation__item">
-            <a class="navigation__link" href="form.html">Подобрать программу</a>
+            <a class="navigation__link" href="form.html">Подбор программы</a>
           </li>
         </ul>
       </nav>
-      <section class="hero">
+      <section class="hero hero--index">
         <div class="hero__description">
-          <h1 class="hero__title title-page">Функциональное питание для котов</h1>
+          <h1 class="hero__title title-page">Функциональное<br> питание для котов</h1>
           <p class="hero__text">Занялся собой? Займись котом!</p>
           <a class="hero__button button button--second" href="form.html">Подобрать программу</a>
-          <div class="hero__promo">
-            <img src="img/chicken-pro-500-hero.png" width="280" height="270" alt="Упаковка Cat Energy PRO 500 г со вкусом курицы.">
-          </div>
+        </div>
+        <div class="hero__img">
+          <img src="img/promo-mobile.png" width="280" height="270" alt="Упаковка Cat Energy PRO 500 г со вкусом курицы.">
         </div>
       </section>
     </div>
@@ -48,12 +48,12 @@
       <ul class="program__list list-reset">
         <li class="program__item program__item--slim">
           <h3 class="program__title">Похудение</h3>
-          <p class="program__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
+          <p>Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
           <a class="program__link" href="#">Каталог slim</a>
         </li>
         <li class="program__item program__item--pro">
           <h3 class="program__title">Набор массы</h3>
-          <p class="program__description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
+          <p>Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
           <a class="program__link" href="#">Каталог pro</a>
         </li>
       </ul>
@@ -82,7 +82,7 @@
               <span class="live__result-description">Затрачено времени</span>
             </div>
             <div class="live__result-price">
-              <p>Затраты на питание:
+              <p class="live__result-text">Затраты на питание:
                 <span>15&nbsp;000 руб.</span>
               </p>
             </div>
@@ -160,6 +160,9 @@
       </div>
     </section>
   </footer>
+
+  <script src="js/script.js"></script>
+
 </body>
 
 </html>
