@@ -135,6 +135,12 @@
   background-position: top 59px center, top, top;
   background-size: 78px 80px, auto, cover;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/svg/icon-gift.svg"),
+      linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
+      url("../img/more-bonus-mobile@2x.png");
+  }
+
   @media (min-width: $tablet-width) {
     padding: 56px 20px 52px 60%;
 
@@ -144,6 +150,12 @@
       linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
       url("../img/more-bonus-tablet.jpg");
     background-position: center left 80px, top, center;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/svg/icon-gift.svg"),
+        linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
+        url("../img/more-bonus-tablet@2x.jpg");
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -152,7 +164,16 @@
 
     text-align: center;
 
+    background-image: url("../img/svg/icon-gift.svg"),
+      linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
+      url("../img/more-bonus-desktop.png");
     background-position: top 59px center, top, top;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/svg/icon-gift.svg"),
+        linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
+        url("../img/more-bonus-desktop@2x.jpg");
+    }
   }
 }
 

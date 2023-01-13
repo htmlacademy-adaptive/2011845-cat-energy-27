@@ -68,6 +68,14 @@
   background-size: auto, cover;
   border: none;
 
+  @media (min-resolution: 2dppx) {
+    background-image: linear-gradient(
+        rgba(104, 183, 56, 0.85),
+        rgba(104, 183, 56, 0.85)
+      ),
+      url("../img/promo-bg-mobile@2x.jpg");
+  }
+
   @media (min-width: $tablet-width) {
     padding: 40px 20px 10px 118px;
 
