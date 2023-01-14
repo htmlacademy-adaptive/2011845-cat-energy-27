@@ -5,6 +5,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Cat Energy</title>
+  <link rel="icon" href="favicon.ico"> <!-- 32×32 -->
+  <link rel="icon" href="img/favicons/icon-16.svg" type="image/svg+xml">
+  <link rel="icon" href="img/favicons/favicon-152.png">
+  <link rel="icon" href="img/favicons/favicon-512.png">
+  <link rel="apple-touch-icon" href="img/favicons/apple-180.png"> <!-- 180×180 -->
+  <link rel="manifest" href="manifest.webmanifest">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -13,7 +19,11 @@
     <div class="navigation container">
       <nav class="navigation__nav navigation__nav--open">
         <a class="navigation__logo">
-          <img src="img/svg/logo-mobile.svg" alt="Логотип Cat Entrge" width="191" height="38">
+          <picture>
+            <source @media="(min-width: $desktop-width)" srcset="img/svg/logo-desktop.svg">
+            <source @media="(min-width: $tablet-width)" srcset="img/svg/logo-tablet.svg">
+            <img src="img/svg/logo-mobile.svg" alt="Логотип Cat Entrge" width="191" height="38">
+          </picture>
         </a>
         <button class="navigation__toggle" type="button">
           <span class="visually-hidden">Открыть меню.</span>
@@ -37,7 +47,11 @@
           <a class="hero__button button button--second" href="form.html">Подобрать программу</a>
         </div>
         <div class="hero__img">
-          <img src="img/promo-mobile.png" width="280" height="270" alt="Упаковка Cat Energy PRO 500 г со вкусом курицы.">
+          <picture>
+            <source @media="(min-width: $desktop-width)" srcset="img/promo-desktop.png, img/catalog/promo-desktop@2x.png">
+            <source @media="(min-width: $tablet-width)" srcset="img/promo-tablet.png, img/catalog/promo-tablet@2x.png">
+            <img src="img/promo-mobile.png" width="280" height="270" srcset="img/promo-mobile@2x.png" alt="Упаковка Cat Energy PRO 500 г со вкусом курицы.">
+          </picture>
         </div>
       </section>
     </div>
@@ -91,10 +105,14 @@
         <div class="live__slider">
           <div class="live__slider-container">
             <div class="live__slider-item live__slider-item--before">
-              <img src="img/cat-fat-mobile.png" alt="Толстый кот" width="280" height="232">
+              <picture>
+                <source @media="(min-width: $tablet-width)" srcset="img/cat-fat-tablet.png, img/catalog/cat-fat-tablet@2x.png">
+                <img src="img/cat-fat-mobile.png" srcset="img/cat-fat-mobile@2x.png" alt="Толстый кот" width="280" height="232">
+              </picture>
             </div>
             <div class="live__slider-item live__slider-item--after">
-              <img src="img/cat-skinny-mobile.png" alt="Стройный кот" width="243" height="232">
+              <source @media="(min-width: $tablet-width)" srcset="img/cat-skinny-tablet.png, img/catalog/cat-skinny-tablet@2x.png">
+              <img src="img/cat-skinny-mobile.png" srcset="img/cat-skinny-mobile@2x.png" alt="Стройный кот" width="243" height="232">
             </div>
           </div>
           <div class="live__change">
@@ -115,7 +133,7 @@
     <section class="footer__map-container footer__map-container--main">
       <div class="container">
         <h2 class="visually-hidden">Местонахождение.</h2>
-        <div class="footer__contact footer__contact">
+        <div class="footer__contact">
           <p class="footer__title">Приглашаем к&nbsp;сотрудничеству дилеров!</p>
           <p class="footer__address">ул. Большая Конюшенная, д. 19/8 <span>Санкт-Петербург</span></p>
         </div>

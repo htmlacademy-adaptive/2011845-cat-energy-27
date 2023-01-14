@@ -13,7 +13,11 @@
     <div class="navigation container">
       <nav class="navigation__nav navigation__nav--open">
         <a class="navigation__logo" href="index.html">
-          <img src="img/svg/logo-mobile.svg" alt="Логотип Cat Entrge" width="191" height="38">
+          <picture>
+            <source @media="(min-width: $desktop-width)" srcset="img/svg/logo-desktop.svg">
+            <source @media="(min-width: $tablet-width)" srcset="img/svg/logo-tablet.svg">
+            <img src="img/svg/logo-mobile.svg" alt="Логотип Cat Entrge" width="191" height="38">
+          </picture>
         </a>
         <button class="navigation__toggle" type="button">
           <span class="visually-hidden">Открыть меню.</span>

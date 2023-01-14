@@ -10,7 +10,7 @@
   font-family: $font-main;
 
   @media (min-width: $tablet-width) {
-    margin: 0 -70px;
+    margin: 0 -30px;
     padding-left: 30px;
 
     font-size: 36px;
@@ -24,7 +24,7 @@
 }
 
 .title-page-other span {
-  padding-right: 20px;
+  padding: 0 20px;
 
   @media (min-width: $tablet-width) {
     padding: 0 37px;
@@ -62,30 +62,5 @@
 
   &:after {
     margin-right: -100%;
-  }
-}
-
-.more .title-page-other--lines {
-  &::after,
-  &::before {
-    top: 40px;
-  }
-}
-
-.more .title-page-other {
-  padding: 25px 21px 36px 20px;
-  line-height: 24px;
-
-  //border-bottom: 1px solid #cdcdcd;
-
-  @media (min-width: $tablet-width) {
-    padding-top: 75px;
-    padding-bottom: 80px;
-
-    border: none;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding: 76px 0 81px;
   }
 }
