@@ -19,6 +19,7 @@
 }
 
 .program__item {
+  position: relative;
   margin-bottom: 19px;
   padding: 20px;
 
@@ -46,7 +47,7 @@
     padding: 67px 30px 60px 53px;
   }
 
-  &--slim {
+  /* &--slim {
     background-image: url("../img/svg/program-slim.svg");
     background-repeat: no-repeat;
     background-position: 22px 21px;
@@ -78,6 +79,42 @@
       background-position: 34px 44px;
       background-size: 134px 100px;
     }
+  }*/
+}
+
+.program__icon {
+  position: absolute;
+}
+
+.program__item--slim .program__icon {
+  left: 20px;
+
+  @media (min-width: $tablet-width) {
+    transform: scale(4);
+    left: 550px;
+    top: 150px;
+  }
+
+  @media (min-width: $desktop-width) {
+    transform: scale(2);
+    left: 70px;
+    top: 70px;
+  }
+}
+
+.program__item--pro .program__icon {
+  left: 10px;
+
+  @media (min-width: $tablet-width) {
+    transform: scale(4);
+    left: 500px;
+    top: 150px;
+  }
+
+  @media (min-width: $desktop-width) {
+    transform: scale(2);
+    left: 70px;
+    top: 70px;
   }
 }
 
