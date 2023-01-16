@@ -48,8 +48,8 @@
         </div>
         <div class="hero__img">
           <picture>
-            <source @media="(min-width: $desktop-width)" srcset="img/promo-desktop.png, img/catalog/promo-desktop@2x.png">
-            <source @media="(min-width: $tablet-width)" srcset="img/promo-tablet.png, img/catalog/promo-tablet@2x.png">
+            <source media="(min-width: 1440px)" srcset="img/promo-desktop.png, img/catalog/promo-desktop@2x.png">
+            <source media="(min-width: 768px)" srcset="img/promo-tablet.png, img/catalog/promo-tablet@2x.png">
             <img src="img/promo-mobile.png" width="280" height="270" srcset="img/promo-mobile@2x.png" alt="Упаковка Cat Energy PRO 500 г со вкусом курицы.">
           </picture>
         </div>
@@ -140,12 +140,12 @@
           <div class="live__slider-container">
             <div class="live__slider-item live__slider-item--before">
               <picture>
-                <source @media="(min-width: $tablet-width)" srcset="img/cat-fat-tablet.png, img/catalog/cat-fat-tablet@2x.png">
+                <source media="(min-width: 768px)" srcset="img/cat-fat-tablet.png, img/catalog/cat-fat-tablet@2x.png">
                 <img src="img/cat-fat-mobile.png" srcset="img/cat-fat-mobile@2x.png" alt="Толстый кот" width="280" height="232">
               </picture>
             </div>
             <div class="live__slider-item live__slider-item--after">
-              <source @media="(min-width: $tablet-width)" srcset="img/cat-skinny-tablet.png, img/catalog/cat-skinny-tablet@2x.png">
+              <source media="(min-width: 768px)" srcset="img/cat-skinny-tablet.png, img/catalog/cat-skinny-tablet@2x.png">
               <img src="img/cat-skinny-mobile.png" srcset="img/cat-skinny-mobile@2x.png" alt="Стройный кот" width="243" height="232">
             </div>
           </div>
