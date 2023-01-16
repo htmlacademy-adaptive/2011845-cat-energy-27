@@ -20,8 +20,8 @@
       <nav class="navigation__nav navigation__nav--open">
         <a class="navigation__logo">
           <picture>
-            <source @media="(min-width: $desktop-width)" srcset="img/svg/logo-desktop.svg">
-            <source @media="(min-width: $tablet-width)" srcset="img/svg/logo-tablet.svg">
+            <source @media="(min-width: 1440)" srcset="img/svg/logo-desktop.svg">
+            <source @media="(min-width: 768px)" srcset="img/svg/logo-tablet.svg">
             <img src="img/svg/logo-mobile.svg" alt="Логотип Cat Entrge" width="191" height="38">
           </picture>
         </a>
@@ -61,11 +61,17 @@
       <h2 class="visually-hidden">Программы</h2>
       <ul class="program__list list-reset">
         <li class="program__item program__item--slim">
+          <svg class="program__icon" width="50" height="53" focusable="false">
+            <use xlink:href="img/svg/sprite.svg#program-slim"></use>
+          </svg>
           <h3 class="program__title">Похудение</h3>
           <p>Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
           <a class="program__link" href="#">Каталог slim</a>
         </li>
         <li class="program__item program__item--pro">
+          <svg class="program__icon" width="67" height="50" focusable="false">
+            <use xlink:href="img/svg/sprite.svg#program-pro"></use>
+          </svg>
           <h3 class="program__title">Набор массы</h3>
           <p>Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
           <a class="program__link" href="#">Каталог pro</a>
@@ -75,10 +81,38 @@
     <section class="advantages container">
       <h2 class="advantages__title subtitle">Как это работает</h2>
       <ul class="advantages__list list-reset">
-        <li class="advantages__item advantages__item--beneficial">Функциональное питание содержит только полезные питательные вещества.</li>
-        <li class="advantages__item advantages__item--powder">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</li>
-        <li class="advantages__item advantages__item--eating">Замените один-два приема обычной еды на наше функциональное питание.</li>
-        <li class="advantages__item advantages__item--changes">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</li>
+        <li class="advantages__item advantages__item--beneficial">
+          <div class="advantages__icon-container">
+            <svg class="advantages__icon" width="31" height="32" focusable="false">
+              <use xlink:href="img/svg/sprite.svg#advantage-beneficial"></use>
+            </svg>
+          </div>
+          <p>Функциональное питание содержит только полезные питательные вещества.</p>
+        </li>
+        <li class="advantages__item advantages__item--powder">
+          <div class="advantages__icon-container">
+            <svg class="advantages__icon" width="31" height="32" focusable="false">
+              <use xlink:href="img/svg/sprite.svg#advantage-powder"></use>
+            </svg>
+          </div>
+          <p>Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</p>
+        </li>
+        <li class="advantages__item advantages__item--eating">
+          <div class="advantages__icon-container">
+            <svg class="advantages__icon" width="31" height="32" focusable="false">
+              <use xlink:href="img/svg/sprite.svg#advantage-eating"></use>
+            </svg>
+          </div>
+          <p>Замените один-два приема обычной еды на наше функциональное питание.</p>
+        </li>
+        <li class="advantages__item advantages__item--changes">
+          <div class="advantages__icon-container">
+            <svg class="advantages__icon" width="31" height="32" focusable="false">
+              <use xlink:href="img/svg/sprite.svg#advantage-changes"></use>
+            </svg>
+          </div>
+          <p>Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
+        </li>
       </ul>
     </section>
     <section class="live">

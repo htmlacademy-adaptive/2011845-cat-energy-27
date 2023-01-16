@@ -5,17 +5,25 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Cat Energy</title>
+  <link rel="icon" href="favicon.ico"> <!-- 32×32 -->
+  <link rel="icon" href="img/favicons/icon-16.svg" type="image/svg+xml">
+  <link rel="icon" href="img/favicons/favicon-152.png">
+  <link rel="icon" href="img/favicons/favicon-512.png">
+  <link rel="apple-touch-icon" href="img/favicons/apple-180.png"> <!-- 180×180 -->
+  <link rel="manifest" href="manifest.webmanifest">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="body">
+  <svg style="display: none">
+  </svg>
   <header class="header">
     <div class="navigation container">
       <nav class="navigation__nav navigation__nav--open">
         <a class="navigation__logo" href="index.html">
           <picture>
-            <source @media="(min-width: $desktop-width)" srcset="img/svg/logo-desktop.svg">
-            <source @media="(min-width: $tablet-width)" srcset="img/svg/logo-tablet.svg">
+            <source @media="(min-width: 1440px)" srcset="img/svg/logo-desktop.svg">
+            <source @media="(min-width: 768px)" srcset="img/svg/logo-tablet.svg">
             <img src="img/svg/logo-mobile.svg" alt="Логотип Cat Entrge" width="191" height="38">
           </picture>
         </a>
@@ -49,6 +57,9 @@
           <div class="product__item-container">
             <a class="product__img" href="#">
               <picture>
+                <source type="image/webp" @media="(min-width: $desktop-width)" srcset="img/catalog/catalog-1-desktop.webp, img/catalog/catalog-1-desktop@2x.webp">
+                <source type="image/webp" @media="(min-width: $tablet-width)" srcset="img/catalog/catalog-1-tablet.webp, img/catalog/catalog-1-tablet@2x.webp">
+                <source type="image/webp" srcset="img/catalog/catalog-1-mobile.webp, img/catalog/catalog-1-mobile.@2x.webp">
                 <source @media="(min-width: $desktop-width)" srcset="img/catalog/catalog-1-desktop.png, img/catalog/catalog-1-desktop@2x.png">
                 <source @media="(min-width: $tablet-width)" srcset="img/catalog/catalog-1-tablet.png, img/catalog/catalog-1-tablet@2x.png">
                 <img src="img/catalog/catalog-1-mobile.png" width="68" height="86" srcset="img/catalog/catalog-1-mobile@2x.png" alt="Упаковка Cat Energy PRO 500 г со вкусом курицы.">
