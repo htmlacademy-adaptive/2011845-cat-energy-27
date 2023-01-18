@@ -40,6 +40,17 @@
   }
 }
 
+.navigation__logo img {
+  @media (min-width: $tablet-width) {
+    height: 52px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 202px;
+    height: 59px;
+  }
+}
+
 .navigation__toggle {
   position: absolute;
   top: 23px;
@@ -121,6 +132,15 @@
 
 .navigation__item {
   border-top: 1px solid #e6e6e6;
+
+  &:last-child {
+    @media (min-width: $tablet-width) {
+      margin-left: 39px;
+    }
+    @media (min-width: $desktop-width) {
+      margin-left: 35px;
+    }
+  }
 
   @media (min-width: $tablet-width) {
     margin-left: 36px;
