@@ -1,0 +1,16 @@
+.social__item {
+  padding-right: 24px;
+
+  &:last-child {
+    padding-right: 0;
+  }
+}
+
+.social__link :hover {
+  fill: #68b738;
+}
+
+.social__link:focus {
+  fill: #68b738;
+  fill-opacity: 0.3;
+}

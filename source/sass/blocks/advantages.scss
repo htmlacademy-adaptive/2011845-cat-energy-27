@@ -4,12 +4,14 @@
 
   @media (min-width: $tablet-width) {
     padding-top: 45px;
-    padding-bottom: 47px;
+    padding-bottom: 44px;
+    border-bottom: 1px solid #e6e6e6;
   }
 
   @media (min-width: $desktop-width) {
     padding-top: 71px;
-    padding-bottom: 105px;
+    padding-bottom: 70px;
+    border: none;
   }
 }
 
@@ -18,7 +20,7 @@
 
   @media (min-width: $tablet-width) {
     display: grid;
-    padding-top: 69px;
+    padding-top: 71px;
     counter-reset: num;
     gap: 75px 60px;
     grid-template-columns: repeat(2, 1fr);
@@ -47,20 +49,38 @@
 
   @media (min-width: $tablet-width) {
     display: inline-block;
+    padding-bottom: 60px;
+
     font-size: 16px;
     line-height: 24px;
   }
 }
 
-.advantages__icon-container {
+.advantages__icon {
   width: 60px;
   height: 60px;
+  margin: auto;
+  position: relative;
+  text-align: center;
+
   background-color: #68b738;
+
   @media (min-width: $tablet-width) {
     width: 80px;
     height: 80px;
+    margin: 0;
     margin-bottom: 31px;
   }
+}
+
+.advantages__icon svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: inline-block;
+  width: 30px;
+  height: 32px;
 }
 
 .advantages__item p {
@@ -68,32 +88,56 @@
   max-width: 224px;
 }
 
-/*.advantages__item p::after {
-  content: "";
-  position: absolute;
-  left: 20px;
-  width: 60px;
-  height: 60px;
-  background-color: #68b738;
-  z-index: -1;
+.advantages__item span {
+  display: none;
+  font-family: $font-main;
+  font-size: 280px;
+  line-height: 280px;
+  color: #f2f2f2;
+
+  @media (min-width: $tablet-width) {
+    display: inline-block;
+    position: absolute;
+    z-index: -1;
+  }
 }
 
-.advantages__item--beneficial p::after {
-  top: 100px;
+.advantages__item--beneficial span {
+  top: 140px;
+  left: 150px;
+
+  @media (min-width: $desktop-width) {
+    top: 160px;
+    left: 120px;
+  }
 }
 
-.advantages__item--powder p::after {
-  top: 178px;
+.advantages__item--powder span {
+  top: 140px;
+  left: 525px;
+
+  @media (min-width: $desktop-width) {
+    top: 160px;
+    left: 440px;
+  }
 }
 
-.advantages__item--eating p::after {
-  top: 255px;
+.advantages__item--eating span {
+  top: 455px;
+  left: 145px;
+
+  @media (min-width: $desktop-width) {
+    top: 160px;
+    left: 760px;
+  }
 }
 
-.advantages__item--changes p::after {
-  top: 335px;
-}*/
+.advantages__item--changes span {
+  top: 455px;
+  left: 955px;
 
-.advantages__icon {
-  margin: auto;
+  @media (min-width: $desktop-width) {
+    top: 160px;
+    left: 1090px;
+  }
 }

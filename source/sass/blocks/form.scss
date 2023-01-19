@@ -77,6 +77,11 @@
   }
 }
 
+.form__fieldset--radio .form__label:disabled,
+.form__fieldset--check .form__label:disabled {
+  opacity: 0.3;
+}
+
 .form__input {
   width: 100%;
   height: 45px;
@@ -91,6 +96,31 @@
 
   background-color: transparent;
   border: 1px solid #e7e7e7;
+
+  &[type="number"] {
+    -moz-appearance: textfield;
+    -webkit-appearance: textfield;
+    appearance: textfield;
+  }
+
+  &[type="number"]::-webkit-outer-spin-button,
+  &[type="number"]::-webkit-inner-spin-button {
+    display: none;
+  }
+
+  &:hover {
+    outline: none;
+    border: 1px solid #cdcdcd;
+  }
+
+  &:focus {
+    outline: none;
+    border: 2px solid #444444;
+  }
+
+  &:invalid {
+    border: 2px solid #ff8282;
+  }
 
   @media (min-width: $tablet-width) {
     height: 52px;
@@ -110,6 +140,10 @@
   border: 1px solid #cdcdcd;
 
   appearance: none;
+
+  &:hover {
+    border: 1px solid #bababa;
+  }
 
   @media (min-width: $tablet-width) {
     width: 40px;
@@ -216,6 +250,7 @@ textarea.form__input {
 
   @media (min-width: $tablet-width) {
     height: 173px;
+    margin-top: 69px;
     padding: 10px 19px;
   }
 }
@@ -225,8 +260,8 @@ textarea.form__input {
   padding-bottom: 24px;
 
   @media (min-width: $tablet-width) {
-    // padding-top: 66px;
-    padding-bottom: 64px;
+    padding-top: 62px;
+    padding-bottom: 75px;
   }
 }
 
@@ -271,6 +306,8 @@ textarea.form__input {
 }
 
 .form__fieldset--contacts .form__group {
+  padding-top: 30px;
+
   @media (min-width: $tablet-width) {
     padding: 67px 0 9px;
   }
@@ -299,7 +336,7 @@ textarea.form__input {
   padding-bottom: 0;
 
   @media (min-width: $tablet-width) {
-    padding-bottom: 40px;
+    padding-bottom: 43px;
   }
 }
 
@@ -317,11 +354,13 @@ textarea.form__input {
 }
 
 .form__fieldset--check .form__group {
+  padding-top: 35px;
   gap: 13px;
 
   @media (min-width: $tablet-width) {
     grid-template-columns: repeat(2, 1fr);
     gap: 32px 56px;
+    padding-top: 52px;
   }
 
   @media (min-width: $desktop-width) {
@@ -349,6 +388,8 @@ textarea.form__input {
   }
 
   @media (min-width: $desktop-width) {
+    gap: 20px 95px;
+
     padding-top: 50px;
     padding-bottom: 84px;
   }
@@ -370,6 +411,7 @@ textarea.form__input {
 
 .form__submit {
   width: 100%;
+  padding: 10px 10px;
   font-family: $font-main;
 
   border: none;

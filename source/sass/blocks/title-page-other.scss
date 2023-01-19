@@ -23,6 +23,12 @@
   }
 }
 
+.form__fieldset .title-page-other {
+  @media (min-width: $tablet-width) {
+    margin: 0 -70px;
+  }
+}
+
 .title-page-other span {
   padding: 0 20px;
 
