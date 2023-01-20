@@ -206,7 +206,7 @@
 
 .live__slider-container {
   position: relative;
-
+  margin: 0 auto;
   width: 280px;
   min-height: 256px;
   overflow: hidden;
@@ -286,9 +286,13 @@
 
   color: #666666;
 
-  background: #ffffff;
+  background-color: #ffffff;
   border: 2px solid #666666;
   border-radius: 20px;
   transform: translate(-50%, -50%);
   cursor: pointer;
+}
+
+.live__change-pin svg {
+  fill: #666666;
 }

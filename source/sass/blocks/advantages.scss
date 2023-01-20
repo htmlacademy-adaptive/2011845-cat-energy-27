@@ -10,7 +10,7 @@
 
   @media (min-width: $desktop-width) {
     padding-top: 71px;
-    padding-bottom: 70px;
+    padding-bottom: 43px;
     border: none;
   }
 }
@@ -47,12 +47,68 @@
     padding-bottom: 0;
   }
 
+  &::after {
+    @media (min-width: $tablet-width) {
+      content: counter(num);
+      position: absolute;
+      top: 0;
+      left: 110px;
+      z-index: -1;
+      margin: 0;
+      font-size: 280px;
+      line-height: 230px;
+      font-family: $font-main;
+      color: #f2f2f2;
+      counter-increment: num;
+    }
+  }
+
   @media (min-width: $tablet-width) {
     display: inline-block;
     padding-bottom: 60px;
 
     font-size: 16px;
     line-height: 24px;
+  }
+}
+
+.advantages__item--beneficial::after {
+  top: 162px;
+  left: 150px;
+
+  @media (min-width: $desktop-width) {
+    top: 187px;
+    left: 120px;
+  }
+}
+
+.advantages__item--powder::after {
+  top: 162px;
+  left: 525px;
+
+  @media (min-width: $desktop-width) {
+    top: 187px;
+    left: 440px;
+  }
+}
+
+.advantages__item--eating::after {
+  top: 479px;
+  left: 145px;
+
+  @media (min-width: $desktop-width) {
+    top: 187px;
+    left: 760px;
+  }
+}
+
+.advantages__item--changes::after {
+  top: 479px;
+  left: 529px;
+
+  @media (min-width: $desktop-width) {
+    top: 187px;
+    left: 1090px;
   }
 }
 
@@ -86,58 +142,4 @@
 .advantages__item p {
   margin: 0;
   max-width: 224px;
-}
-
-.advantages__item span {
-  display: none;
-  font-family: $font-main;
-  font-size: 280px;
-  line-height: 280px;
-  color: #f2f2f2;
-
-  @media (min-width: $tablet-width) {
-    display: inline-block;
-    position: absolute;
-    z-index: -1;
-  }
-}
-
-.advantages__item--beneficial span {
-  top: 140px;
-  left: 150px;
-
-  @media (min-width: $desktop-width) {
-    top: 160px;
-    left: 120px;
-  }
-}
-
-.advantages__item--powder span {
-  top: 140px;
-  left: 525px;
-
-  @media (min-width: $desktop-width) {
-    top: 160px;
-    left: 440px;
-  }
-}
-
-.advantages__item--eating span {
-  top: 455px;
-  left: 145px;
-
-  @media (min-width: $desktop-width) {
-    top: 160px;
-    left: 760px;
-  }
-}
-
-.advantages__item--changes span {
-  top: 455px;
-  left: 955px;
-
-  @media (min-width: $desktop-width) {
-    top: 160px;
-    left: 1090px;
-  }
 }

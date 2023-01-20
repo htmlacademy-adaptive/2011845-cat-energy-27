@@ -12,6 +12,8 @@
   }
 
   @media (min-width: $tablet-width) {
+    width: fit-content;
+    margin-left: auto;
     justify-content: end;
   }
 }
