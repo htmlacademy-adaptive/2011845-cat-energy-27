@@ -18,7 +18,7 @@
 <body class="body">
   <header class="header  header--form">
     <div class="navigation container">
-      <nav class="navigation__nav navigation__nav--open">
+      <nav class="navigation__nav">
         <a class="navigation__logo" href="index.html">
           <picture>
             <source media="(min-width: 1440px)" srcset="img/svg/logo-desktop.svg">
@@ -58,14 +58,14 @@
             <div class="form__group">
               <div class="form__group-item">
                 <label class="form__label" for="form-name">Имя:<sup>*</sup></label>
-                <input class="form__input" type="text" id="form-name" placeholder="Барсик" required>
+                <input class="form__input form__input--error" type="text" id="form-name" placeholder="Барсик" required>
               </div>
               <div class="form__group-item">
                 <label class="form__label" for="form-weight">Вес (кг):<sup>*</sup></label>
                 <input class="form__input" type="number" id="form-weight" placeholder="7" required>
               </div>
               <div class="form__group-item">
-                <label class="form__label" for="form-years">Возраст (лет):</label>
+                <label class="form__label" for="form-years">Возраст&nbsp;(лет):</label>
                 <input class="form__input" type="number" id="form-years" placeholder="7">
               </div>
             </div>
@@ -96,7 +96,7 @@
             <div class="form__group-item">
               <label class="form__label" for="form-mail">E-mail:<sup>*</sup></label>
               <div class="form__input-container form__input-container--mail">
-                <input class="form__input form__input--mail" type="email" id="form-mail" placeholder="кuklachev@gmail.com">
+                <input class="form__input form__input--mail form__input--error" type="email" id="form-mail" placeholder="кuklachev@gmail.com">
               </div>
             </div>
             <div class="form__group-item form__group-item--phone">
