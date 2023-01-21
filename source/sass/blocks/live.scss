@@ -6,14 +6,18 @@
   @media (min-width: $tablet-width) {
     padding: 43px 0 101px;
     background: rgb(234, 234, 234);
+    /*stylelint-disable*/
     background: linear-gradient(0deg, #eaeaea 42.5%, #ffffff 42.9%);
+    /*stylelint-enable*/
   }
 
   @media (min-width: $desktop-width) {
     padding-top: 0;
     padding-bottom: 58px;
     background: #f2f2f2;
+    /*stylelint-disable*/
     background: linear-gradient(0deg, #f2f2f2 77%, #ffffff 77%);
+    /*stylelint-enable*/
   }
 }
 

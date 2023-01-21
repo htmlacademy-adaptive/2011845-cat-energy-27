@@ -103,8 +103,10 @@
   }
 */
   &[type="number"] {
+    /*stylelint-disable*/
     -moz-appearance: textfield;
     -webkit-appearance: textfield;
+    /*stylelint-enable*/
     appearance: textfield;
   }
 
