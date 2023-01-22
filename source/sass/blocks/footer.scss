@@ -29,12 +29,19 @@
   height: 100%;
 }
 
-.footer__map-img {
-  display: none;
+.footer__map-img,
+.footer__map-img img {
+  display: block;
+  width: 100%;
+  height: 100%;
 }
 
 .footer__map-iframe {
   height: 100%;
+}
+
+.no-js .footer__map-iframe {
+  display: none;
 }
 
 .footer__map iframe {
@@ -53,7 +60,7 @@
 
   @media (min-width: $tablet-width) {
     gap: 10px 250px;
-    padding: 40px 39px;
+    padding: 41px 39px 40px;
   }
 
   @media (min-width: $desktop-width) {
@@ -69,11 +76,17 @@
   }
 }
 
+.footer--catalog .footer__contact {
+  @media (min-width: $tablet-width) {
+    padding-top: 41px;
+  }
+}
+
 .footer__title {
   font-size: 16px;
   line-height: 20px;
-  text-transform: uppercase;
   color: #111111;
+  text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
@@ -82,14 +95,13 @@
 }
 
 .footer__address {
-  font-family: $font-second;
   line-height: 20px;
+  font-family: $font-second;
   color: #444444;
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 20px;
-
     text-align: right;
   }
 
@@ -116,9 +128,85 @@
 }
 
 .footer__container {
+  padding-top: 40px;
+
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 140px 1fr;
     align-items: center;
+    padding-top: 58px;
+    padding-bottom: 56px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 66px;
+    padding-bottom: 66px;
+  }
+}
+
+.footer__logo-container {
+  padding-bottom: 15px;
+
+  text-align: center;
+
+  border-bottom: 1px solid #d9d9d9;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+
+    text-align: start;
+
+    border: 0;
+  }
+}
+
+.footer__logo {
+  display: inline-block;
+  width: 128px;
+  height: 24px;
+
+  color: #111111;
+
+  @media (min-width: $tablet-width) {
+    width: 143px;
+    height: 26px;
+  }
+
+  &:hover,
+  &:focus {
+    color: #3e3e3e;
+  }
+
+  &:active {
+    color: #6b6b6b;
+  }
+}
+
+.footer__logo svg {
+  width: 100%;
+  height: 100%;
+
+  fill: currentColor;
+}
+
+.footer__social-container {
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  border-bottom: 1px solid #d9d9d9;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+
+    border: none;
+  }
+}
+
+.footer__copyright {
+  padding-top: 20px;
+  padding-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
   }
 }

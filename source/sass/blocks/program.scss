@@ -20,6 +20,7 @@
 
 .program__item {
   position: relative;
+
   margin-bottom: 19px;
   padding: 20px;
 
@@ -32,89 +33,61 @@
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: column;
-
+    flex-wrap: wrap;
+    min-height: 372px;
     margin-bottom: 30px;
     padding: 67px 316px 58px 52px;
-
-    min-height: 372px;
   }
 
   @media (min-width: $desktop-width) {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    max-width: 570px;
     margin: 0;
     padding: 67px 30px 60px 53px;
   }
-
-  /* &--slim {
-    background-image: url("../img/svg/program-slim.svg");
-    background-repeat: no-repeat;
-    background-position: 22px 21px;
-    background-size: 50px 53px;
-
-    @media (min-width: $tablet-width) {
-      background-position: top 79px right 63px;
-      background-size: 200px 211px;
-    }
-
-    @media (min-width: $desktop-width) {
-      background-position: 52px 36px;
-      background-size: 100px 106px;
-    }
-  }
-
-  &--pro {
-    background-image: url("../img/svg/program-pro.svg");
-    background-repeat: no-repeat;
-    background-position: 13px 24px;
-    background-size: 67px 50px;
-
-    @media (min-width: $tablet-width) {
-      background-position: top 92px right 31px;
-      background-size: 268px 200px;
-    }
-
-    @media (min-width: $desktop-width) {
-      background-position: 34px 44px;
-      background-size: 134px 100px;
-    }
-  }*/
 }
 
-.program__icon {
+.program__item--slim svg {
   position: absolute;
-}
-
-.program__item--slim .program__icon {
-  left: 20px;
+  left: 21px;
 
   @media (min-width: $tablet-width) {
+    top: 160px;
+    right: 138px;
+    left: auto;
+
     transform: scale(4);
-    left: 550px;
-    top: 150px;
   }
 
   @media (min-width: $desktop-width) {
+    top: 65px;
+    right: auto;
+    left: 80px;
+
     transform: scale(2);
-    left: 70px;
-    top: 70px;
   }
 }
 
-.program__item--pro .program__icon {
-  left: 10px;
+.program__item--pro svg {
+  position: absolute;
+  left: 13px;
 
   @media (min-width: $tablet-width) {
+    top: 168px;
+    right: 131px;
+    left: auto;
+
     transform: scale(4);
-    left: 500px;
-    top: 150px;
   }
 
   @media (min-width: $desktop-width) {
+    top: 71px;
+    right: auto;
+    left: 67px;
+
     transform: scale(2);
-    left: 70px;
-    top: 70px;
   }
 }
 
@@ -138,7 +111,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 55px;
+    margin-bottom: 58px;
     padding-left: 162px;
   }
 }
@@ -158,8 +131,8 @@
 
     font-size: 16px;
     line-height: 24px;
-
     color: #000000;
+
     border: none;
   }
 
@@ -192,10 +165,10 @@
     content: "";
     position: absolute;
     top: 45%;
-    //right: 0;
 
     width: 32px;
     height: 10px;
+    margin-left: 15px;
 
     background-image: url("../img/svg/link-arrow.svg");
     background-repeat: no-repeat;
@@ -208,10 +181,15 @@
     }
   }
 
-  &:hover::after {
+  &:hover::after,
+  &:focus::after {
     background-image: url("../img/svg/link-arrow-hover.svg");
     background-repeat: no-repeat;
     background-position: left center;
     background-size: 32px 10px;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }

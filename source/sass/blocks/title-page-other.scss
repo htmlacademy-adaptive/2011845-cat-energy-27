@@ -23,6 +23,17 @@
   }
 }
 
+.form__fieldset .title-page-other {
+  @media (min-width: $tablet-width) {
+    margin: 0 -70px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 -102px 0 -110px;
+    padding-left: 70px;
+  }
+}
+
 .title-page-other span {
   padding: 0 20px;
 
