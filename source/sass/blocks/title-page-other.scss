@@ -23,17 +23,6 @@
   }
 }
 
-.form__fieldset .title-page-other {
-  @media (min-width: $tablet-width) {
-    margin: 0 -70px;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin: 0 -102px 0 -110px;
-    padding-left: 70px;
-  }
-}
-
 .title-page-other span {
   padding: 0 20px;
 
@@ -61,7 +50,7 @@
       top: 25px;
     }
   }
-
+  /*stylelint-disable*/
   &:before {
     display: none;
     margin-left: -100%;
@@ -74,4 +63,5 @@
   &:after {
     margin-right: -100%;
   }
+  /*stylelint-enable*/
 }
