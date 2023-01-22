@@ -1,0 +1,23 @@
+.no-js .navigation__toggle {
+  @media (max-width: 767px) {
+    display: none;
+  }
+}
+
+.no-js .navigation__list {
+  @media (max-width: 767px) {
+    position: static;
+
+    display: flex;
+  }
+}
+
+.no-js .navigation__logo {
+  @media (max-width: 767px) {
+    margin-bottom: 10px;
+  }
+}
+
+.no-js .footer__map-iframe {
+  display: none;
+}

@@ -113,7 +113,8 @@
   padding-top: 3px;
   max-width: 260px;
   margin: 0;
+
   @media (min-width: $tablet-width) {
-    padding-top: 0px;
+    padding-top: 0;
   }
 }
