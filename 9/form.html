@@ -5,17 +5,22 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Cat Energy</title>
-  <link rel="icon" href="favicon.ico"> <!-- 32×32 -->
+  <link rel="icon" href="favicon.ico">
   <link rel="icon" href="img/favicons/icon-16.svg" type="image/svg+xml">
   <link rel="icon" href="img/favicons/favicon-152.png">
   <link rel="icon" href="img/favicons/favicon-512.png">
-  <link rel="apple-touch-icon" href="img/favicons/apple-180.png"> <!-- 180×180 -->
+  <link rel="apple-touch-icon" href="img/favicons/apple-180.png">
+
+  <link rel="preload" href="fonts/oswald/oswaldmedium.woff2" as="font" crossorigin>
+  <link rel="preload" href="fonts/oswald/oswaldregular.woff2" as="font" crossorigin>
+  <link rel="preload" href="fonts/lato/Lato-Regular.woff2" as="font" crossorigin>
+
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="stylesheet" href="css/style.min.css">
   <base href="https://htmlacademy-adaptive.github.io/2011845-cat-energy-27/9/">
 </head>
 
-<body class="body">
+<body class="body no-js">
   <header class="header  header--form">
     <div class="navigation container">
       <nav class="navigation__nav">
@@ -154,19 +159,37 @@
         </div>
       </div>
       <div class="footer__map">
-        <a class="footer__map-img" href="#">
-          <img src="img/map-mobile.jpg" alt="Карта" width="320" height="362">
-        </a>
+        <noscript>
+          <a class="footer__map-img" href="#">
+            <picture>
+              <!-- 1х: 1440px; 2x: 2880px -->
+              <source media="(min-width: 1200px)" type="image/webp" srcset="img/map.webp 1x, img/map@2x.webp 2x">
+              <source media="(min-width: 1200px)" type="image/jpeg" srcset="img/map.jpg 1x, img/map@2x.jpg 2x">
+
+              <!-- 1х: 768px; 2x: 1536px -->
+              <source media="(min-width: 768px)" type="image/webp" srcset="img/map-tablet.webp 1x, img/map-tablet@2x.webp 2x">
+              <source media="(min-width: 768px)" type="image/jpeg" srcset="img/map-tablet.jpg 1x, img/map-tablet@2x.jpg 2x">
+
+              <!-- 1х: 320px; 2x: 640px -->
+              <source type="image/webp" srcset="img/map-mobile.webp 1x, img/map-mobile@2x.webp 2x">
+              <img src="img/map-mobile.jpg" srcset="img/map-mobile@2x.jpg 2x" alt="Карта" width="320" height="362">
+            </picture>
+          </a>
+        </noscript>
         <div class="footer__map-iframe">
-          <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.58095197757!2d30.319410323390894!3d59.93909537160517!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1603140540112!5m2!1sru!2sru" allowfullscreen title="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург"></iframe>
+          <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.58095197757!2d30.319410323390894!3d59.93909537160517!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1603140540112!5m2!1sru!2sru" allowfullscreen>
+          </iframe>
         </div>
       </div>
     </section>
     <section class="footer__container container">
       <h2 class="visually-hidden">Социальные сети.</h2>
       <div class="footer__logo-container">
-        <a class="footer__logo">
-          <img src="img/svg/logo-footer.svg" alt="Логотип Cat Energy" width="128" height="24">
+        <a class="footer__logo" href="index.html">
+          <svg width="128" height="24" focusable="false">
+            <use xlink:href="img/sprite.svg#logo-footer"></use>
+          </svg>
+          <span class="visually-hidden">Переход на главную страницу</span>
         </a>
       </div>
       <div class="footer__social-container">
