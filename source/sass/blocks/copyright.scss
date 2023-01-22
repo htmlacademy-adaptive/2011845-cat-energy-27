@@ -1,33 +1,36 @@
 .copyright__link {
   display: flex;
   justify-content: space-between;
-  font-family: $font-second;
+
   font-size: 16px;
   line-height: 19px;
+  font-family: $font-second;
+  color: #444444;
   text-decoration: none;
-  color: $color-second;
 
-  &:focus {
+  &:active {
     opacity: 0.3;
   }
 
   @media (min-width: $tablet-width) {
+    justify-content: end;
     width: fit-content;
     margin-left: auto;
-    justify-content: end;
   }
 }
 
 .copyright__link svg {
-  fill: #666666;
   text-align: end;
+
+  fill: #666666;
 
   @media (min-width: $tablet-width) {
     margin-left: 28px;
   }
 }
 
-.copyright__link:hover svg {
+.copyright__link:hover svg,
+.copyright__link:focus svg {
   fill: #68b738;
 }
 

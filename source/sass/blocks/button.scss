@@ -1,13 +1,14 @@
 .button {
+  align-items: center;
   padding: 7px 10px;
 
   font-size: 16px;
   line-height: 20px;
-  align-items: center;
   text-align: center;
-  text-decoration: none;
-  text-transform: uppercase;
   color: $basic-white;
+  text-transform: uppercase;
+  text-decoration: none;
+
   background-color: #68b738;
   cursor: pointer;
 
@@ -16,12 +17,14 @@
     line-height: 18px;
   }
 
-  &:hover {
+  &:hover,
+  &:focus {
     background-color: #5eaa2f;
   }
 
-  &:focus {
+  &:active {
     color: rgba(255, 255, 255, 0.3);
+
     background-color: #5eaa2f;
   }
 }

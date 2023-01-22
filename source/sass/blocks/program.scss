@@ -20,6 +20,7 @@
 
 .program__item {
   position: relative;
+
   margin-bottom: 19px;
   padding: 20px;
 
@@ -33,55 +34,60 @@
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    min-height: 372px;
     margin-bottom: 30px;
     padding: 67px 316px 58px 52px;
-
-    min-height: 372px;
   }
 
   @media (min-width: $desktop-width) {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    max-width: 570px;
     margin: 0;
     padding: 67px 30px 60px 53px;
-    max-width: 570px;
   }
 }
 
 .program__item--slim svg {
   position: absolute;
-
   left: 21px;
 
   @media (min-width: $tablet-width) {
-    transform: scale(4);
-    left: 520px;
     top: 160px;
+    right: 138px;
+    left: auto;
+
+    transform: scale(4);
   }
 
   @media (min-width: $desktop-width) {
-    transform: scale(2);
-    left: 80px;
     top: 65px;
+    right: auto;
+    left: 80px;
+
+    transform: scale(2);
   }
 }
 
 .program__item--pro svg {
   position: absolute;
-
   left: 13px;
 
   @media (min-width: $tablet-width) {
-    transform: scale(4);
-    left: 510px;
     top: 168px;
+    right: 131px;
+    left: auto;
+
+    transform: scale(4);
   }
 
   @media (min-width: $desktop-width) {
-    transform: scale(2);
+    top: 71px;
+    right: auto;
     left: 67px;
-    top: 68px;
+
+    transform: scale(2);
   }
 }
 
@@ -105,7 +111,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 55px;
+    margin-bottom: 58px;
     padding-left: 162px;
   }
 }
@@ -125,8 +131,8 @@
 
     font-size: 16px;
     line-height: 24px;
-
     color: #000000;
+
     border: none;
   }
 
@@ -159,10 +165,10 @@
     content: "";
     position: absolute;
     top: 45%;
-    margin-left: 15px;
 
     width: 32px;
     height: 10px;
+    margin-left: 15px;
 
     background-image: url("../img/svg/link-arrow.svg");
     background-repeat: no-repeat;
@@ -175,21 +181,15 @@
     }
   }
 
-  &:hover::after {
-    background-image: url("../img/svg/link-arrow-hover.svg");
-    background-repeat: no-repeat;
-    background-position: left center;
-    background-size: 32px 10px;
-  }
-
-  &:focus {
-    opacity: 0.3;
-  }
-
+  &:hover::after,
   &:focus::after {
     background-image: url("../img/svg/link-arrow-hover.svg");
     background-repeat: no-repeat;
     background-position: left center;
     background-size: 32px 10px;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }

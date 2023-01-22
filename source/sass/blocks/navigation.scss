@@ -8,10 +8,9 @@
     display: grid;
     grid-template-columns: repeat(2, auto);
     gap: 20px;
+    align-items: center;
     min-height: 52px;
     padding-top: 0;
-    align-items: center;
-    //padding: 24px 30px;
   }
 
   @media (min-width: $desktop-width) {
@@ -28,11 +27,12 @@
   height: 38px;
   margin-left: 19px;
 
-  &:hover {
+  &:hover,
+  &:focus {
     opacity: 0.8;
   }
 
-  &:focus {
+  &:active {
     opacity: 0.6;
   }
 
@@ -89,6 +89,7 @@
 
   &::before {
     top: 45%;
+
     transform: translateY(-50%);
   }
 
@@ -153,7 +154,6 @@
 
   @media (min-width: $tablet-width) {
     margin-left: 36px;
-    //padding-top: 8px;
 
     border: none;
 
@@ -187,27 +187,21 @@
 
 .navigation__link {
   display: block;
-  padding-top: 23px;
-  padding-bottom: 22px;
+  padding: 23px 23px 22px;
 
-  font-family: $font-main;
   font-weight: 500;
   font-size: 20px;
   line-height: 20px;
+  font-family: $font-main;
   text-align: center;
-  text-decoration: none;
-  text-transform: uppercase;
   color: inherit;
+  text-transform: uppercase;
+  text-decoration: none;
+
   border-top: 1px solid #e6e6e6;
 
-  &:hover {
-    opacity: 0.6;
-  }
-
   @media (min-width: $tablet-width) {
-    padding: 0;
-    padding-top: 18px;
-    padding-bottom: 8px;
+    padding: 18px 0 6px;
 
     font-weight: 400;
     font-size: 18px;
@@ -217,10 +211,19 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 6px 0;
+    padding: 16px 0 5px;
 
     font-size: 20px;
     line-height: 30px;
+  }
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
 
@@ -230,6 +233,28 @@
   }
 
   @media (min-width: $desktop-width) {
+    padding-bottom: 6px;
+
     color: #ffffff;
+  }
+}
+
+.no-js .navigation__toggle {
+  @media (max-width: 767px) {
+    display: none;
+  }
+}
+
+.no-js .navigation__list {
+  @media (max-width: 767px) {
+    position: static;
+
+    display: flex;
+  }
+}
+
+.no-js .navigation__logo {
+  @media (max-width: 767px) {
+    margin-bottom: 10px;
   }
 }

@@ -5,28 +5,26 @@
 
   @media (min-width: $tablet-width) {
     padding: 43px 0 101px;
+
     background: rgb(234, 234, 234);
-    /*stylelint-disable*/
     background: linear-gradient(0deg, #eaeaea 42.5%, #ffffff 42.9%);
-    /*stylelint-enable*/
   }
 
   @media (min-width: $desktop-width) {
     padding-top: 0;
     padding-bottom: 58px;
+
     background: #f2f2f2;
-    /*stylelint-disable*/
     background: linear-gradient(0deg, #f2f2f2 77%, #ffffff 77%);
-    /*stylelint-enable*/
   }
 }
 
 .live__container {
   @media (min-width: $desktop-width) {
     display: grid;
-    align-items: start;
-    gap: 10px 220px;
     grid-template-columns: 436px 1fr;
+    gap: 10px 220px;
+    align-items: start;
   }
 }
 
@@ -73,30 +71,29 @@
 
 .live__result {
   display: grid;
-  //padding-top: 6px;
-
-  gap: 27px 32px;
   grid-template-columns: repeat(2, 124px);
+  //padding-top: 6px;
+  gap: 27px 32px;
 
   @media (min-width: $tablet-width) {
-    align-items: center;
-    //padding-top: 37px;
-
-    gap: 33px 42px;
     grid-template-columns: 162px 162px 1fr;
+    //padding-top: 37px;
+    gap: 33px 42px;
+    align-items: center;
   }
 
   @media (min-width: $desktop-width) {
-    //padding-top: 53px;
-
-    gap: 20px 42px;
     grid-template-columns: repeat(2, 162px);
+    //padding-top: 53px;
+    gap: 20px 42px;
   }
 }
 
 .live__result-item {
   position: relative;
+
   text-align: center;
+
   border: 1px solid #cdcdcd;
   border-radius: 3px;
 }
@@ -162,14 +159,14 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 25px;
-
     grid-column: 1/-1;
+    padding-top: 25px;
   }
 }
 
 .live__result-price p {
   margin: 8px 0 20px;
+
   font-size: 14px;
   line-height: 20px;
   font-family: $font-main;
@@ -188,6 +185,7 @@
 
   @media (min-width: $desktop-width) {
     max-width: 100%;
+
     text-align: left;
   }
 }
@@ -210,9 +208,10 @@
 
 .live__slider-container {
   position: relative;
-  margin: 0 auto;
+
   width: 280px;
   min-height: 256px;
+  margin: 0 auto;
   overflow: hidden;
 
   @media (min-width: $tablet-width) {
@@ -275,6 +274,35 @@
   background-color: #666666;
   border-radius: 2px;
   transform: translateX(-50%);
+}
+
+.live__change:hover,
+.live__change:focus-within {
+  background-color: #68b738;
+}
+
+.live__change:hover .live__change-pin,
+.live__change-pin:focus,
+.live__change-pin:hover {
+  border-color: #68b738;
+  outline: none;
+}
+
+.live__change:hover svg,
+.live__change:focus-within svg {
+  fill: #68b738;
+}
+
+.live__change:active {
+  background-color: rgba(94, 170, 47, 0.6);
+}
+
+.live__change:active svg {
+  fill: rgba(94, 170, 47, 0.6);
+}
+
+.live__change:active button {
+  border-color: rgba(94, 170, 47, 0.6);
 }
 
 .live__change-pin {

@@ -1,16 +1,32 @@
-.social__item {
-  padding-right: 24px;
+.social {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  width: 132px;
+  margin: 0 auto;
+}
 
-  &:last-child {
-    padding-right: 0;
+.social__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 28px;
+  height: 22px;
+
+  color: #666666;
+
+  &:hover,
+  &:focus {
+    color: #68b738;
+
+    outline: none;
+  }
+
+  &:active {
+    color: rgba(105, 183, 56, 0.3);
   }
 }
 
-.social__link :hover {
-  fill: #68b738;
-}
-
-.social__link:focus {
-  fill: #68b738;
-  fill-opacity: 0.3;
+.social__link svg {
+  fill: currentColor;
 }
